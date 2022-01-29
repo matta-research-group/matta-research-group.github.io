@@ -53,3 +53,5 @@ exclude:
   - LICENSE.md
   - LICENSE
   - README.md
+
+theme: jekyll-theme-cayman
