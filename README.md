@@ -1,4 +1,4 @@
-# Bioinspired and functional Materials Modelling
+# Micaela Matta Research Group Website
 
 
 We are a computational materials modelling group based at King's College London in the Department of Chemistry.
