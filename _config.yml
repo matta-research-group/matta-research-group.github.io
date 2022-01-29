@@ -20,7 +20,7 @@ collections:
 defaults:
   - scope:
       path: ""
-      type: "services"
+      type: "teaching"
     values:
       layout: "service"
   - scope:
