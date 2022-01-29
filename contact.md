@@ -10,9 +10,3 @@ We are located at Britannia House
 
 /uploads/benjamin-davies-oja2ty_9zlm-unsplash.jpg
 
-
-
-
-    {% include jekyll_mapping.html %}
-    </body>
-    
