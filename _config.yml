@@ -1,4 +1,5 @@
-baseurl: '/https://micaela-matta.github.io'
+url: https://micaela-matta.github.io # the base hostname & protocol for your site
+baseurl: /group-web # the subpath of your site, e.g. /blog/
 permalink: pretty
 title: 'Jekyll Serif'
 
