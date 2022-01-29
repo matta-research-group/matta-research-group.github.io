@@ -28,13 +28,6 @@ defaults:
       type: "team"
     values:
       layout: "team"
-mapping:
-    provider: openstreetmap
-    api_key: AIzaSyDNhj22EqZoDYXSF90FMCQjS-nQx4JG4uI
-    zoom: 10
-    dimensions:
-        width: 600
-        height: 400
 sass:
   indentWidth: 4
   style: compressed # possible values: nested expanded compact compressed
