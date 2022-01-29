@@ -1,5 +1,5 @@
 ---
-title: Jekyll Serif Theme
+title: group website
 layout: home
 description: 
 intro_image: "images/illustrations/pointing.svg"
