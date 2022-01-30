@@ -1,6 +1,6 @@
 ---
 title: Teaching
-layout: services
+layout: page
 description: Teaching
 intro_image: "images/illustrations/reading.svg"
 intro_image_absolute: true
