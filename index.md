@@ -12,3 +12,7 @@ show_call_box: true
 
 We are a computational materials modelling group based at King's College London in the Department of Chemistry.
 
+# News
+
+01/04/22 - Micaela's official start date!
+ 
