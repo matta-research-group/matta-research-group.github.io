@@ -35,7 +35,19 @@ sass:
 
 plugins:
   - jekyll-environment-variables
-
+  - jekyll-archives
+  - jekyll-diagrams
+  - jekyll-email-protect
+  - jekyll-feed
+  - jekyll-github-metadata
+  - jekyll-imagemagick
+  - jekyll-paginate-v2
+  - jekyll/scholar
+  - jekyll-sitemap
+  - jekyll-target-blank
+  - jekyll-twitter-plugin
+  - jemoji
+  
 exclude:
   - Gemfile
   - Gemfile.lock
