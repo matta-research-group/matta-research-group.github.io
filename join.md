@@ -5,9 +5,9 @@ description: Join
 bodyClass: page-about
 ---
 
-# Graduate Students
 
 We have an opening for a PhD student with a 2022 flexible start date. See the advertisement or get in touch with me for more details.
+
 
 # Postdoctoral Fellows
 
