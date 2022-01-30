@@ -11,6 +11,8 @@ logo:
   desktop_height: "32px"
   desktop_width: "120px"
 
+bibliography_template: bibtemplate 
+
 collections:
   services:
     output: true
