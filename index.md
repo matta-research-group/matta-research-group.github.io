@@ -12,7 +12,11 @@ intro_image_hide_on_mobile: true
 # Bioinspired and Functional Materials Modelling <!-- group name -->
 
 We are a computational materials modelling group based at King's College London in the Department of Chemistry.
-<!-- short description to be updated -->
+<!-- short description to be updated. I will also add an image placeholder. -->
+
+# Funding
+
+<!-- icons of funding agencies here -->
 
 # News
 
