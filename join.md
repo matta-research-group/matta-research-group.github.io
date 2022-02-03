@@ -16,4 +16,4 @@ We currently don't have openings, but there are multiple fellowship schemes that
 
 ## Lab Culture
 
-
+<-- more text on group culture including an image.  -->
