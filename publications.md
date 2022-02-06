@@ -6,4 +6,10 @@ description: publications by categories in reversed chronological order. generat
 ---
 
 <!-- the list of publications goes here. for each publication in the list, my name in bold/color and an image next to the text showing the graphical abstract of the page (the small image summary of the publication)  -->
-<!-- example: https://ethan-pickering.github.io/publications/ --> 
+
+
+examples:
+
+- http://www.chem.gla.ac.uk/cronin/pubs/
+
+- https://ethan-pickering.github.io/publications/ 
