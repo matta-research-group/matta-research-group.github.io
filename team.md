@@ -10,6 +10,6 @@ intro_image_hide_on_mobile: false
 # Meet The Team
 
 examples
-- https://mol.dog for quantity of text for each team member
+- https://mol.dog or https://www.agslatergroup.com/team-4 have the right text:photo ratio for each team member
 
-- https://www.theochem.nl/team-members for round photos, clean layout, but i would allow more text for each person
+- https://www.theochem.nl/team-members i like the round photos, clean layout, but i would allow more text for each person (like the examples above)
