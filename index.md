@@ -22,3 +22,10 @@ We are a computational materials modelling group based at King's College London 
 
 01/04/22 - Micaela's official start date!
  
+
+
+
+# examples 
+
+https://quantchemdev.github.io/index.html i like the  image banner, the layout, the news with embedded twitter feed, but i would rather have a bullet point list next to the tweets. the contact part at the bottom is also nice.
+
