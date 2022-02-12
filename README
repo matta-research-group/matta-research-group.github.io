@@ -1,0 +1,8 @@
+Jekyll site for Matta Research group.
+
+# Dev branch
+
+- Runs at http://localhost:4000
+- To run use:
+  - `bundle install`
+  - `jekyll serve`
