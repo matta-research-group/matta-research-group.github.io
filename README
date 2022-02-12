@@ -1,8 +1,6 @@
 Jekyll site for Matta Research group.
 
-# Dev branch
+# Staging branch
 
-- Runs at http://localhost:4000
-- To run use:
-  - `bundle install`
-  - `jekyll serve`
+- Runs at https://panchtatvam.github.io/matta-research-group.github.io
+- Deployed at Github pages for testing of development by [Akash](https://www.upwork.com/freelancers/~01124a7f6ef4e0c40a)
