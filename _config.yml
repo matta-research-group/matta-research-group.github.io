@@ -3,7 +3,7 @@ email: your-email@example.com
 description: >- # this means to ignore newlines until "baseurl:"
   Description for the site
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://panchtatvam.github.io/matta-research-group.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://matta-research-group.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Build settings
 theme: minima
