@@ -19,3 +19,4 @@ exclude:
   - vendor/gems/
   - vendor/ruby/
   - vendor/
+  - assets/bootstrap-5.1.3/
