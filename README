@@ -6,3 +6,9 @@ Jekyll site for Matta Research group.
 - To run use:
   - `bundle install`
   - `jekyll serve`
+
+# Credits
+
+## CSS
+
+- [Normalize CSS](https://necolas.github.io/normalize.css/)
