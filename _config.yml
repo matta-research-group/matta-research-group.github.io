@@ -6,9 +6,9 @@ baseurl: "/matta-research-group.github.io" # the subpath of your site, e.g. /blo
 url: "https://panchtatvam.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Build settings
-theme: minima
-plugins:
-  - jekyll-feed
+#theme: minima
+#plugins:
+#  - jekyll-feed
 
 # Exclude from processing
 
@@ -23,3 +23,4 @@ exclude:
   - vendor/cache/
   - vendor/gems/
   - vendor/ruby/
+  - vendor/
