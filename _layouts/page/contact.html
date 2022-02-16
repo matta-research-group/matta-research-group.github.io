@@ -9,7 +9,7 @@ layout: default
     {% endcomment %}
     <section class="pg-contact-hero-section container grid-y-center col-sm-1 col-md-2">
         <div>
-            <img class="img-responsive img-rounded-borders" alt="London image" src="{{ page.intro_image }}">
+            <img class="img-responsive img-rounded-borders" alt="London image" src="{{ site.url }}{{ site.baseurl }}{{ page.intro_image }}">
         </div>
         <h3 class="mt-sm-3">
             {{ content }}
@@ -25,7 +25,7 @@ layout: default
         {% endcomment %}
         <div class="pg-contact-email-section-email-text clearfix">
             <div class="float-left">
-                <a href="mailto:{{ site.email }}"><img alt="Email" src="/assets/images/icons/mail.svg" class="img-icon-size"></a>
+                <a href="mailto:{{ site.email }}"><img alt="Email" src="{{ site.url }}{{ site.baseurl }}/assets/images/icons/mail.svg" class="img-icon-size"></a>
             </div>
             <div class="float-left ml-sm-1 ml-md-1">
                 <h1><a href="mailto:{{ site.email }}" class="text-color-black">{{ site.email }}</a></h1>
@@ -52,7 +52,7 @@ layout: default
         {% endcomment %}
         <div class="pg-contact-address-section-address-text clearfix mt-sm-2">
             <div class="float-left">
-                <img alt="Location" src="/assets/images/icons/location.svg" class="img-icon-size">
+                <img alt="Location" src="{{ site.url }}{{ site.baseurl }}/assets/images/icons/location.svg" class="img-icon-size">
             </div>
             <div class="float-left ml-sm-1 ml-md-1">
                 <h1>{{ site.address }}</h1>
