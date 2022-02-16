@@ -1,0 +1,23 @@
+/**
+* @author Akash Kumar Sharma <vyom@vyom.site>
+*
+*/
+
+
+.img-responsive {
+    width: 100%;   
+    height: auto;
+}
+
+.grid {
+    display: grid;
+}
+
+.col-1 {
+    grid-template-columns: 1fr;
+}
+
+.col-2 {
+    grid-template-columns: 1fr 1fr;
+    gap: 1vw;
+}

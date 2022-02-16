@@ -3,6 +3,17 @@ layout: default
 ---
 
 <!-- Hero image with informational text -->
-<section class="container">
-    {{ content }}    
+<section class="container contact-page">
+    {% comment %}
+    first section with introduction to contact page
+    {% endcomment %}
+    <div class="hero-section grid col-2">
+        <div>
+            <img class="img-responsive" alt="" src="{{ page.intro_image }}">
+        </div>
+        <div>
+            {{ content }}
+        </div>
+    </div>
+    
 </section>
