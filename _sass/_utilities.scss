@@ -9,3 +9,59 @@
     margin-left: auto;
     margin-right: auto;
 }
+
+/**
+* Margins and paddings in multiples of min_pixel_count
+*
+*/
+@each $number in $list_num_one_to_twelve {
+    @each $viewport in $viewports {
+        @include breakpoint ($viewport) {
+    // margin top
+    .mt-#{$viewport}-#{$number} {
+        margin-top: #{$number * $min_pixel_count};
+    }
+    // margin bottom
+    .mb-#{$viewport}-#{$number} {
+        margin-bottom: #{$number * $min_pixel_count};
+    }
+    // margin left
+    .ml-#{$viewport}-#{$number} {
+        margin-left: #{$number * $min_pixel_count};
+    }
+    // margin right
+    .mr-#{$viewport}-#{$number} {
+        margin-right: #{$number * $min_pixel_count};
+    }
+
+    // padding top
+    .pt-#{$viewport}-#{$number} {
+        padding-top: #{$number * $min_pixel_count};
+    }
+    // padding bottom
+    .pb-#{$viewport}-#{$number} {
+        padding-bottom: #{$number * $min_pixel_count};
+    }
+    // padding left
+    .pl-#{$viewport}-#{$number} {
+        padding-left: #{$number * $min_pixel_count};
+    }
+    // padding right
+    .pr-#{$viewport}-#{$number} {
+        padding-right: #{$number * $min_pixel_count};
+    }
+}
+}
+}
+
+// gives a slight round feeling to all corners of the image
+.rounded-borders {
+    @include border_radius($min_pixel_count, $min_pixel_count, $min_pixel_count, $min_pixel_count);
+}
+
+// makes an image full round
+// @see https://www.w3schools.com/howto/howto_css_rounded_images.asp
+.rounded {
+    @include border_radius(50%,50%,50%,50%);
+}
+

@@ -3,21 +3,75 @@
 *
 */
 
-
+/**
+* Creates responsive image
+*/
 .img-responsive {
     width: 100%;   
     height: auto;
 }
 
+/**
+* CSS grid
+*
+*/
 .grid {
     display: grid;
 }
 
-.col-1 {
-    grid-template-columns: 1fr;
+// horizontally center aligned
+.grid-x-center {
+    display: grid;
+    justify-items: center;
 }
 
-.col-2 {
-    grid-template-columns: 1fr 1fr;
-    gap: 1vw;
+// horizontally center aligned
+.grid-y-center {
+    display: grid;
+    align-items: center;
+}
+
+// horizontally center aligned
+.grid-xy-center {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+@each $number in $list_num_one_to_twelve {
+    // for mobile viewport
+    .col-sm-#{$number} {
+        @include breakpoint(sm) {
+        grid-template-columns: repeat(#{$number} , 1fr);
+        column-gap: #{$min_pixel_count * 2};
+        }
+    }
+    // for medium viewport
+    .col-md-#{$number} {
+        @include breakpoint(md) {
+        grid-template-columns: repeat(#{$number} , 1fr);
+        column-gap: #{$min_pixel_count * 2};
+        }
+    }
+    // for large viewport
+    .col-lg-#{$number} {
+        @include breakpoint(lg) {
+        grid-template-columns: repeat(#{$number} , 1fr);
+        column-gap: #{$min_pixel_count * 2};
+        }
+    }
+    // for xlarge viewport
+    .col-xlg-#{$number} {
+        @include breakpoint(xlg) {
+        grid-template-columns: repeat(#{$number} , 1fr);
+        column-gap: #{$min_pixel_count * 2};
+        }
+    }
+    // for xxlarge viewport
+    .col-xxlg-#{$number} {
+        @include breakpoint(xxlg) {
+        grid-template-columns: repeat(#{$number} , 1fr);
+        column-gap: #{$min_pixel_count * 2};
+        }
+    }
 }

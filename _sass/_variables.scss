@@ -3,26 +3,14 @@
 *
 */
 
-/** 
- *Responsive media query mixins
- *
- * @see https://get.foundation/sites/docs/media-queries.html
- *
-*/
-@mixin breakpoint($point) {
-  @if $point == xxlarge {
-    @media (min-width: 74.9375em) { @content ; }
- }
-  @else if $point == xlarge {
-    @media (min-width: 64em) { @content ; }
- }
-   @else if $point == large {
-    @media (min-width: 50em) { @content ; }
- }
-  @else if $point == medium {
-    @media (min-width: 39.9375em)  { @content ; }
- }
- @else if $point == small {
-    @media (max-width: 39.9375em)  { @content ; }
- }
-}
+// Lists
+$list_num_one_to_twelve: 1 2 3 4 5 6 7 8 9 10 11 12;
+
+// Minimum pixel count used to create margins, padding etc
+$min_pixel_count: 10px;
+
+// browser prefix
+$browser_prefix: -webkit -moz -o -ms;
+
+// viewport sizes
+$viewports: sm md lg xlg xxlg;
