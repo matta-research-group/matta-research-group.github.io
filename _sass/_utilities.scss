@@ -3,22 +3,9 @@
 *
 */
 
-
-@mixin breakpoint($point) {
-    @if $point == desktop {
-      @media (min-width: 70em) { @content ; }
-   }
-    @else if $point == laptop {
-      @media (min-width: 64em) { @content ; }
-   }
-     @else if $point == tablet {
-      @media (min-width: 50em) { @content ; }
-   }
-    @else if $point == phablet {
-      @media (min-width: 37.5em)  { @content ; }
-   }
-   @else if $point == mobileonly {
-      @media (max-width: 37.5em)  { @content ; }
- 
-   }
- }
+// Gives a separation from left and right margins of viewport for easy of viewing
+.container {
+    max-width: 90%; // kept same for now. Will edit if required as per media queries
+    margin-left: auto;
+    margin-right: auto;
+}

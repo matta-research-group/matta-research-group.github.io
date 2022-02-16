@@ -3,8 +3,26 @@
 *
 */
 
-$breakpoints: (
-  'small':  767px,
-  'medium': 992px,
-  'large':  1200px
-) !default;
+/** 
+ *Responsive media query mixins
+ *
+ * @see https://get.foundation/sites/docs/media-queries.html
+ *
+*/
+@mixin breakpoint($point) {
+  @if $point == xxlarge {
+    @media (min-width: 74.9375em) { @content ; }
+ }
+  @else if $point == xlarge {
+    @media (min-width: 64em) { @content ; }
+ }
+   @else if $point == large {
+    @media (min-width: 50em) { @content ; }
+ }
+  @else if $point == medium {
+    @media (min-width: 39.9375em)  { @content ; }
+ }
+ @else if $point == small {
+    @media (max-width: 39.9375em)  { @content ; }
+ }
+}
