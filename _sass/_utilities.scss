@@ -1,0 +1,11 @@
+/**
+* @author Akash Kumar Sharma <vyom@vyom.site>
+*
+*/
+
+// Gives a separation from left and right margins of viewport for easy of viewing
+.container {
+    max-width: 90%; // kept same for now. Will edit if required as per media queries
+    margin-left: auto;
+    margin-right: auto;
+}

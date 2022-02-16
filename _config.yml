@@ -1,5 +1,5 @@
 title: Matta Research Group
-email: your-email@example.com
+email: micaela.matta@kcl.ac.uk
 description: >- # this means to ignore newlines until "baseurl:"
   Description for the site
 baseurl: "/matta-research-group.github.io" # the subpath of your site, e.g. /blog
@@ -24,3 +24,4 @@ exclude:
   - vendor/gems/
   - vendor/ruby/
   - vendor/
+  - assets/bootstrap-5.1.3/
