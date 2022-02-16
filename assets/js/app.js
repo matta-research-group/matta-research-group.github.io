@@ -5,7 +5,7 @@
 window.onload = function () {
     // contact page animation
     var contact_page_animation = bodymovin.loadAnimation({
-        container: document.getElementById('icon-container'), // required
+        container: document.getElementById('pg-contact-email-section-image'), // required
         path: '/assets/images/Blogging Minimalistic/Blogging.json', // required
         renderer: 'svg', // required
         loop: true, // optional

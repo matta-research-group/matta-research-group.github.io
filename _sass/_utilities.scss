@@ -55,13 +55,35 @@
 }
 
 // gives a slight round feeling to all corners of the image
-.rounded-borders {
+.img-rounded-borders {
     @include border_radius($min_pixel_count, $min_pixel_count, $min_pixel_count, $min_pixel_count);
 }
 
 // makes an image full round
 // @see https://www.w3schools.com/howto/howto_css_rounded_images.asp
-.rounded {
+.img-rounded {
     @include border_radius(50%,50%,50%,50%);
 }
 
+// an image of icon size.
+.img-icon-size {
+    height: #{$min_pixel_count * 4};
+    width: auto;
+}
+
+// Floats
+.float-left {
+    float: left;
+}
+.float-right {
+    float: right;
+}
+.clearfix {
+    overflow: auto;
+
+    &::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+}

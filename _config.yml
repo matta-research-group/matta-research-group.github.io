@@ -5,6 +5,7 @@ description: >- # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://localhost:4000" # the base hostname & protocol for your site, e.g. http://example.com
 JEKYLL_ENV: "development"
+address: "7 Trinity St, London SE1 1DB"
 
 # Exclude from processing
 exclude:

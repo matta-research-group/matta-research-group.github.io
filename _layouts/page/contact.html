@@ -2,18 +2,62 @@
 layout: default
 ---
 
-<!-- Hero image with informational text -->
-<section class="container contact-page">
+<div class="contact-page">
+
     {% comment %}
     first section with introduction to contact page
     {% endcomment %}
-    <div class="hero-section grid-y-center col-sm-1 col-md-2">
+    <section class="pg-contact-hero-section container grid-y-center col-sm-1 col-md-2">
         <div>
-            <img class="img-responsive rounded-borders bb" alt="" src="{{ page.intro_image }}">
+            <img class="img-responsive img-rounded-borders" alt="London image" src="{{ page.intro_image }}">
         </div>
-        <div class="mt-sm-3">
+        <h3 class="mt-sm-3">
             {{ content }}
+        </h3>
+    </section>
+
+    {% comment %}
+    Email section
+    {% endcomment %}
+    <section class="pg-contact-email-section mt-sm-6 mt-md-10 container grid-xy-center col-sm-1 col-md-2">
+        {% comment %}
+        Email address obtained from _config.yml in site root
+        {% endcomment %}
+        <div class="pg-contact-email-section-email-text clearfix">
+            <div class="float-left">
+                <a href="mailto:{{ site.email }}"><img alt="Email" src="/assets/images/icons/mail.svg" class="img-icon-size"></a>
+            </div>
+            <div class="float-left ml-sm-1 ml-md-1">
+                <h1><a href="mailto:{{ site.email }}" class="text-color-black">{{ site.email }}</a></h1>
+            </div>
         </div>
-    </div>
+        {% comment %}
+        Rendered animated SVG from /asets/js/app.js
+        {% endcomment %}
+        <div id="pg-contact-email-section-image" class="mt-sm-2"></div>
+    </section>
+
+     {% comment %}
+    third section with embedded map and address
+    {% endcomment %}
+    <section class="pg-contact-hero-section container grid-xy-center col-sm-1 col-md-2 mt-sm-6 mt-md-10">
+        {% comment %}
+        Google map
+        {% endcomment %}
+        <div class="responsive-iframe">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d39739.805600395564!2d-0.094966!3d51.499678!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x9b8a630b0ee600ed!2sBritannia%20House%20Kings%20College%20London%20Chemistry%20Department!5e0!3m2!1sen!2suk!4v1645038305764!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" class="img-rounded-borders responsive-iframe"></iframe>
+        </div>
+        {% comment %}
+        Address
+        {% endcomment %}
+        <div class="pg-contact-address-section-address-text clearfix mt-sm-2">
+            <div class="float-left">
+                <img alt="Location" src="/assets/images/icons/location.svg" class="img-icon-size">
+            </div>
+            <div class="float-left ml-sm-1 ml-md-1">
+                <h1>{{ site.address }}</h1>
+            </div>
+        </div>
+    </section>
     
-</section>
+</div>
