@@ -10,13 +10,14 @@ Jekyll site for Matta Research group.
 # Credits
 
 ## CSS
-
-<<<<<<< HEAD
 - [Normalize CSS](https://necolas.github.io/normalize.css/)
-=======
 - [A Modern CSS Reset](https://piccalil.li/blog/a-modern-css-reset/)
 
 ## Icons
 
 - [Pixel true](https://www.pixeltrue.com/free-packs/minimalistic-illustrations)
->>>>>>> dev
+- [Hero icons](https://heroicons.dev)
+
+## Images
+
+- [Big ben by Pixabay](https://www.pexels.com/photo/big-ben-bridge-castle-city-460672/)

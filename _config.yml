@@ -6,8 +6,7 @@ baseurl: "/matta-research-group.github.io" # the subpath of your site, e.g. /blo
 url: "https://panchtatvam.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 
 JEKYLL_ENV: "production"
-
-# Exclude from processing
+address: "7 Trinity St, London SE1 1DB"
 
 # Exclude from processing
 exclude:
