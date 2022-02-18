@@ -3,3 +3,11 @@ _site
 .jekyll-cache
 .jekyll-metadata
 vendor
+
+# Foundation CSS
+/assets/foundation/.DS_Store
+/assets/foundation/node_modules/
+/assets/foundation/npm-debug.log
+/assets/foundation/*.swp
+/assets/foundation/.cache
+/assets/foundation/.idea

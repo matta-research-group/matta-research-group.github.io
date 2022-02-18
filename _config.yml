@@ -21,3 +21,13 @@ exclude:
   - vendor/ruby/
   - vendor/
   - assets/bootstrap-5.1.3/
+  - assets/foundation/node_modules/
+  - assets/foundation/src/
+  - assets/foundation/.babelrc
+  - assets/foundation/.gitignore
+  - assets/foundation/config.yml
+  - assets/foundation/gulpfile.babel.js
+  - assets/foundation/package.json
+  - assets/foundation/readme.md
+  - assets/foundation/yarn.lock
+  
