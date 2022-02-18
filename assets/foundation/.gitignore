@@ -4,3 +4,10 @@ npm-debug.log
 *.swp
 .cache
 .idea
+src
+.babelrc
+config.yml
+gulpfile.babel.js
+package.json
+readme.me
+yarn.lock
