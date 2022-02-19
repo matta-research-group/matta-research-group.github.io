@@ -7,6 +7,10 @@ url: "http://localhost:4000" # the base hostname & protocol for your site, e.g. 
 JEKYLL_ENV: "development"
 address: "7 Trinity St, London SE1 1DB"
 
+collections:
+  team:
+    output: false
+
 # Exclude from processing
 exclude:
   - .sass-cache/
