@@ -1,5 +1,5 @@
 ---
-title: Contact
+title: Contact Us
 layout: page/contact
 description: Contact
 intro_image_1 : "/assets/images/page-images/pexels-pixabay-460672.jpg"
