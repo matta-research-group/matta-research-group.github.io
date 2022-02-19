@@ -8,6 +8,10 @@ url: "https://panchtatvam.github.io" # the base hostname & protocol for your sit
 JEKYLL_ENV: "production"
 address: "7 Trinity St, London SE1 1DB"
 
+collections:
+  team:
+    output: false
+
 # Exclude from processing
 exclude:
   - .sass-cache/
