@@ -27,53 +27,38 @@ layout: default
         </div>
     </section>
 
-
-
-
-
-    {% comment %}
-    Email section
-    
-    <section class="grid-container">
-        {% comment %}
-        Email address obtained from _config.yml in site root
-        {% endcomment %}
-        <div class="pg-contact-email-section-email-text clearfix">
-            <div class="float-left">
-                <a href="mailto:{{ site.email }}"><img alt="Email" src="{{ site.url }}{{ site.baseurl }}/assets/images/icons/mail.svg" class="img-icon-size"></a>
+    <section class="grid-container margin-top-3 padding-top-3 padding-bottom-2">
+        <div class="grid-x grid-margin-x">
+            {% comment %}
+            Google map
+            {% endcomment %}
+            <div class="cell small-12 medium-6">
+                <div class="responsive-embed">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2483.736728495426!2d-0.09657258423034033!3d51.499698579633886!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x9b8a630b0ee600ed!2sBritannia%20House%20Kings%20College%20London%20Chemistry%20Department!5e0!3m2!1sen!2suk!4v1645262363701!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
             </div>
-            <div class="float-left ml-sm-1 ml-md-1">
-                <h1><a href="mailto:{{ site.email }}" class="text-color-black">{{ site.email }}</a></h1>
+            {% comment %}
+            Address and email
+            {% endcomment %}
+            <div class="cell small-12 medium-6">
+                {% comment %}
+                Address
+                {% endcomment %}
+                <div class="separator-center">
+                    <p class="subheader font-italic">Find us at: </p>
+                    <p class="">{{ page.address_1 }}</p>
+                    <p>{{ page.address_2 }}</p>
+                    <p class="font-bold">{{ page.address_3 }}</p>
+                </div>
+                {% comment %}
+                Email
+                {% endcomment %}
+                <div class="text-center margin-top-1">
+                    <p class="lead font-bold "><a href="mailto:{{ site.email }}" class="text-color-primary"><i class="fi-mail padding-right-1"></i>Email</a></p>
+                </div>
             </div>
         </div>
-        {% comment %}
-        Rendered animated SVG from /asets/js/app.js
-        {% endcomment %}
-        <div id="pg-contact-email-section-image" class="mt-sm-2"></div>
+
     </section>
-
-     {% comment %}
-    third section with embedded map and address
-    {% endcomment %}
-    <section class="pg-contact-hero-section container grid-xy-center col-sm-1 col-md-2 mt-sm-6 mt-md-10">
-        {% comment %}
-        Google map
-        {% endcomment %}
-        <div class="responsive-iframe">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d39739.805600395564!2d-0.094966!3d51.499678!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x9b8a630b0ee600ed!2sBritannia%20House%20Kings%20College%20London%20Chemistry%20Department!5e0!3m2!1sen!2suk!4v1645038305764!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" class="img-rounded-borders responsive-iframe"></iframe>
-        </div>
-        {% comment %}
-        Address
-        {% endcomment %}
-        <div class="pg-contact-address-section-address-text clearfix mt-sm-2">
-            <div class="float-left">
-                <img alt="Location" src="{{ site.url }}{{ site.baseurl }}/assets/images/icons/location.svg" class="img-icon-size">
-            </div>
-            <div class="float-left ml-sm-1 ml-md-1">
-                <h1>{{ site.address }}</h1>
-            </div>
-        </div>
-    </section>
-    {% endcomment %}
     
 </div>
