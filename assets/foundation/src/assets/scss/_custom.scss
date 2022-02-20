@@ -1,0 +1,15 @@
+/**
+* @author Akash Kumar Sharma <vyom@vyom.site>
+* Supplement to Foundation CSS
+*
+*/
+
+// Rounded corner for top left and bottom right of frame. Works best for images
+.tlbr-rounder-corner {
+    -moz-border-top-left-radius: 2rem;     
+    -webkit-border-bottom-right-radius: 2rem;
+    -moz-border-top-left-radius: 2rem;     
+    -webkit-border-bottom-right-radius: 2rem;
+    border-top-left-radius: 2rem;     
+    border-bottom-right-radius: 2rem;
+}
