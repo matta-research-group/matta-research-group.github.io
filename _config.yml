@@ -10,6 +10,10 @@ address: "7 Trinity St, London SE1 1DB"
 collections:
   team:
     output: false
+  research:
+    output: true
+  publication:
+    output: true
 
 # Exclude from processing
 exclude:
