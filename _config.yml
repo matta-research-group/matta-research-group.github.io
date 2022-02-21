@@ -15,6 +15,13 @@ collections:
   publication:
     output: true
 
+defaults:
+  - scope:
+      path: ""
+      type: "research"
+    values:
+      layout: "single/research"
+
 # Exclude from processing
 exclude:
   - .sass-cache/
