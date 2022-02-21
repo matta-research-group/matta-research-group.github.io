@@ -7,6 +7,32 @@ url: "http://localhost:4000" # the base hostname & protocol for your site, e.g. 
 JEKYLL_ENV: "development"
 address: "7 Trinity St, London SE1 1DB"
 
+# For jekyll-scholar plugin for Bibtex
+
+scholar:
+
+  last_name: YOUR_LAST_NAME
+  first_name: YOUR_FIRST_NAME
+
+  style: apa
+  locale: en
+
+  sort_by: year
+  order: descending
+
+  source: /_bibliography/
+  bibliography: biblio.bib
+  bibliography_template: bib
+
+  replace_strings: true
+  join_strings: true
+
+  details_dir: bibliography
+  details_layout: bibtex.html
+  details_link: Details
+
+  query: "@*"
+
 collections:
   team:
     output: false
@@ -45,4 +71,7 @@ exclude:
   - assets/foundation/package.json
   - assets/foundation/readme.md
   - assets/foundation/yarn.lock
+
+plugins:
+  - jekyll/scholar
   
