@@ -35,3 +35,15 @@
 main {
     min-height: 60vh;
 }
+.home-hero-image {
+    background: url(https://images.pexels.com/photos/4947573/pexels-photo-4947573.jpeg?crop=entropy&cs=srgb&dl=pexels-maria-orlova-4947573.jpg&fit=crop&fm=jpg&h=1280&w=1920) no-repeat center center; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    min-height: 80vh;
+}
+
+.background-white-translucent {
+    background: rgba(253, 255, 253, 0.6);
+}

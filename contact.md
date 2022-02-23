@@ -2,7 +2,8 @@
 title: Contact Us
 layout: page/contact
 description: Contact
-intro_image_1 : "/assets/images/page-images/pexels-pixabay-460672.jpg"
+hero_image: "/assets/images/page-images/benjamin-davies-oja2ty_9zlm-unsplash.jpg"
+intro_image_1 : "/assets/images/page-images/benjamin-davies-oja2ty_9zlm-unsplash.jpg"
 intro_image_2 : "/assets/images/page-images/kings-college.jpg"
 intro_image_3 : "/assets/images/page-images/britannia-building.png"
 address_1: "Britannia House"
