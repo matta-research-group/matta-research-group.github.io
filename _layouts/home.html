@@ -1,14 +1,143 @@
 ---
 layout: default
 ---
-
-<div class="reveal" id="exampleModal1" data-reveal>
-  <h1>Awesome. I Have It.</h1>
-  <p class="lead">Your couch. It is mine.</p>
-  <p>I'm a cool paragraph that lives inside of an even cooler modal. Wins!</p>
-  <button class="close-button" data-close aria-label="Close modal" type="button">
-    <span aria-hidden="true">&times;</span>
-  </button>
+{% comment %}]
+Hero image
+{% endcomment %}
+<div class="home-hero-image">
+  <div class="grid-container">
+    <div class="grid-x grid-margin-x">
+      <div class="cell small-12 margin-top-3">
+        <div class="text-center padding-3 font-bold">
+          <h1><span class="color-white font-wide">{{ page.hero_title}}</span></h1>
+          <a href="/research" class="button warning rounded margin-top-2">Our Research</a>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 
-<p><button class="button" data-open="exampleModal1">Click me for a modal</button></p>
+{% comment %}
+intro text
+{% endcomment %}
+<div class="home-intro margin-top-3 margin-bottom-3">
+  <div class="grid-container"><h5 class="text-center">{{ page.intro }}</h5></div>
+</div>
+
+{% comment %}
+Carousel
+
+<div class="home-intro-carousel grid-container">
+  <div class="orbit" role="region" aria-label="Favorite Space Pictures" data-orbit>
+    <div class="orbit-wrapper">
+      <div class="orbit-controls">
+        <button class="orbit-previous"><span class="show-for-sr">Previous Slide</span>&#9664;&#xFE0E;</button>
+        <button class="orbit-next"><span class="show-for-sr">Next Slide</span>&#9654;&#xFE0E;</button>
+      </div>
+      <ul class="orbit-container text-center">
+        <li class="is-active orbit-slide">
+          <figure class="orbit-figure">
+            <img class="orbit-image" src="https://picsum.photos/100" alt="Space">
+            <figcaption class="orbit-caption">Space, the final frontier.</figcaption>
+          </figure>
+        </li>
+        <li class="orbit-slide">
+          <figure class="orbit-figure">
+            <img class="orbit-image" src="https://picsum.photos/101" alt="Space">
+            <figcaption class="orbit-caption">Lets Rocket!</figcaption>
+          </figure>
+        </li>
+        <li class="orbit-slide">
+          <figure class="orbit-figure">
+            <img class="orbit-image" src="https://picsum.photos/102" alt="Space">
+            <figcaption class="orbit-caption">Encapsulating</figcaption>
+          </figure>
+        </li>
+        <li class="orbit-slide">
+          <figure class="orbit-figure">
+            <img class="orbit-image" src="https://picsum.photos/103" alt="Space">
+            <figcaption class="orbit-caption">Outta This World</figcaption>
+          </figure>
+        </li>
+      </ul>
+    </div>
+    <nav class="orbit-bullets">
+      <button class="is-active" data-slide="0">
+        <span class="show-for-sr">First slide details.</span>
+        <span class="show-for-sr" data-slide-active-label>Current Slide</span>
+      </button>
+      <button data-slide="1"><span class="show-for-sr">Second slide details.</span></button>
+      <button data-slide="2"><span class="show-for-sr">Third slide details.</span></button>
+      <button data-slide="3"><span class="show-for-sr">Fourth slide details.</span></button>
+    </nav>
+  </div>
+</div>
+{% endcomment %}
+
+{% comment %}
+More information about the group
+{% endcomment %}
+<div class="home-more-info margin-top-3 margin-bottom-3">
+  <div class="grid-container">
+    <div class="grid-x grid-margin-x grid-margin-y">
+      <div class="cell small-12 medium-4">
+        <img class="img-responsive" alt="image" src="{{ page.more_info_image }}">
+      </div>
+      <div class="lead cell small-12 medium-8">
+        {{ page.more_info }}
+      </div>
+    </div>
+
+  </div>
+</div>
+
+{% comment %}
+Research
+{% endcomment %}
+<div class="home-more-info margin-top-3 margin-bottom-3">
+  <div class="grid-container">
+    <div class="grid-x grid-margin-x grid-margin-y">
+      <div class="lead cell small-12 medium-6">
+        <h3 class="separator-left">Our Research</h3>
+        {{ page.research_text }}
+        <div class="margin-top-2"><a class="button primary rounded" href="/research">Research</a></div>
+      </div>
+      <div class="cell small-12 medium-6">
+        <img class="img-responsive" alt="image" src="{{ page.research_image }}">
+      </div>
+    </div>
+  </div>
+</div>
+
+{% comment %}
+Research
+{% endcomment %}
+<div class="home-more-info margin-top-3 margin-bottom-3 hide-for-small-only">
+  <div class="grid-container">
+    <div class="grid-x grid-margin-x grid-margin-y">
+      <div class="cell small-12 medium-6">
+        <img class="img-responsive" alt="image" src="{{ page.publications_image }}">
+      </div>
+      <div class="lead cell small-12 medium-6">
+        <h3 class="separator-right">Publications</h3>
+        <div class="text-right">{{ page.publications_text }}</div>
+        <div class="margin-top-2 text-right"><a class="button primary rounded" href="/publications">Know more</a></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="home-more-info margin-top-3 margin-bottom-3 hide-for-medium">
+  <div class="grid-container">
+    <div class="grid-x grid-margin-x grid-margin-y">
+      <div class="lead cell small-12 medium-6">
+        <h3 class="separator-left">Publications</h3>
+        <div class="">{{ page.publications_text }}</div>
+        <div class="margin-top-2"><a class="button primary rounded" href="/publications">Know more</a></div>
+      </div>
+      <div class="cell small-12 medium-6">
+        <img class="img-responsive" alt="image" src="{{ page.publications_image }}">
+      </div>
+    </div>
+  </div>
+</div>
