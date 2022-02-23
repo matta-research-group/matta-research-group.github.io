@@ -1,4 +1,6 @@
-.sass-cache
-.jekyll-cache
-.jekyll-metadata
-vendor
+# Ignore everything
+*
+
+# But not these files...
+!.gitignore
+!_site/
