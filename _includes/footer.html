@@ -1,9 +1,50 @@
-<footer class="margin-top-3">
+<footer class="site-footer margin-top-3 padding-bottom-3">
+    {% comment %}
+    For mobile only
+    {% endcomment %}
+    <div class="grid-container padding-top-3 padding-bottom-3 hide-for-medium">
+            {% comment %}
+            Site branding
+            {% endcomment %}
+            <h4 class="color-white font-wide font-bold text-center margin-bottom-2">{{ site.title }}</h4>
+              {% comment %}
+            address
+            {% endcomment %}
+            <div class="text-center">
+                <p class="color-white font-italic text-underline">Contact Info </p>
+                <p class="color-white">{{ site.address_1 }}, {{ site.address_2 }}</p>
+                <p class="font-bold color-white">{{ site.address_3 }}</p>
+                <p class="lead font-bold "><a href="mailto:{{ site.email }}" class="color-white"><i class="fi-mail padding-right-1"></i>Email</a></p>
+            </div>
+    </div>
+    <div class="grid-container padding-top-3 padding-bottom-3 hide-for-small-only">
+        <div class="grid-x grid-margin-x grid-margin-y">
+            {% comment %}
+            Site branding
+            {% endcomment %}
+            <div class="cell small-12 medium-4">
+                <h4 class="color-white font-wide font-bold">{{ site.title }}</h4>
+            </div>
+              {% comment %}
+            address
+            {% endcomment %}
+            <div class="cell small-12 medium-8">
+                {% comment %}
+                Address
+                {% endcomment %}
+                <div class="text-right">
+                    <p class="color-white font-italic text-underline">Contact Info </p>
+                    <p class="color-white">{{ site.address_1 }}, {{ site.address_2 }}</p>
+                    <p class="font-bold color-white">{{ site.address_3 }}</p>
+                    <p class="lead font-bold "><a href="mailto:{{ site.email }}" class="color-white"><i class="fi-mail padding-right-1"></i>Email</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr class="color-white"/>
+    <div class="grid-container color-white padding-top-2 margin-botom-2 text-center">&copy; {{ "now" | date: "%Y" }} | {{ site.title }} | All rights reserved</div>
 </footer>
 
-{% comment %}
-Lottie for SVG animations
-{% endcomment %}
 <script src="{{ site.url }}{{ '/assets/js/jquery.min.js' | relative_url }}"></script>
 <script src="{{ site.url }}{{ '/assets/js/what-input.min.js' | relative_url }}"></script>
 <script src="{{ site.url }}{{ '/assets/foundation/dist/assets/js/app.js' | relative_url }}"></script>
