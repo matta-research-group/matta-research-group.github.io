@@ -8,6 +8,8 @@ url: "https://panchtatvam.github.io" # the base hostname & protocol for your sit
 JEKYLL_ENV: "production"
 address: "7 Trinity St, London SE1 1DB"
 
+# For jekyll-scholar plugin for Bibtex
+
 collections:
   team:
     output: false
@@ -16,12 +18,30 @@ collections:
   publication:
     output: true
 
-defaults:
-  - scope:
-      path: ""
-      type: "research"
-    values:
-      layout: "single/research"
+scholar:
+
+  last_name: Matta
+  first_name: [Micaela, "M"]
+
+  style: apa
+  locale: en
+
+  sort_by: year
+  order: descending
+
+  source: /_bibliography/
+  bibliography: biblio.bib
+  bibliography_template: biblio
+
+  replace_strings: true
+  join_strings: true
+
+  details_dir: bibliography
+  details_layout: bibtex.html
+  details_link: Details
+
+  query: "@*"
+
 
 # Exclude from processing
 exclude:
@@ -36,7 +56,6 @@ exclude:
   - vendor/gems/
   - vendor/ruby/
   - vendor/
-  - assets/bootstrap-5.1.3/
   - assets/foundation/node_modules/
   - assets/foundation/src/
   - assets/foundation/.babelrc
