@@ -65,4 +65,11 @@ exclude:
   - assets/foundation/package.json
   - assets/foundation/readme.md
   - assets/foundation/yarn.lock
+
+defaults:
+  - scope:
+      path: ""
+      type: "research"
+    values:
+      layout: "single/research"
   
