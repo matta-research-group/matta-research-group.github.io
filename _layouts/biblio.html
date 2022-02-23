@@ -28,14 +28,14 @@
         {% assign trim_first = author.first | remove: "<sup>#</sup>" %}
         {% if forloop.length == 1 %}
           {% if author.last == site.scholar.last_name and site.scholar.first_names contains trim_first %}
-            <b>{{author.last}}, {{author.first}}</b>
+            <span class="font-bold text-underline">{{author.last}}, {{author.first}}</span>
           {% else %}
             {{author.last}}, {{author.first}}
           {% endif %}
         {% else %}
           {% unless forloop.last %}
             {% if author.last == site.scholar.last_name and site.scholar.first_names contains trim_first %}
-              <b>{{author.last}}, {{author.first}}</b>,
+              <span class="font-bold text-underline">{{author.last}}, {{author.first}}</span>,
             {% else %}
               {% if site.data.coauthors[author.last] %}
                 <a class="coauthor" href="{{site.data.coauthors[author.last].url}}" target="_blank">{{author.last}}, {{author.first}}</a>,
@@ -45,7 +45,7 @@
             {% endif %}
           {% else %}
             {% if author.last == site.scholar.last_name and site.scholar.first_names contains trim_first %}
-              and <b>{{author.last}}, {{author.first}}</b>
+              and <span class="font-bold text-underline">{{author.last}}, {{author.first}}</span>
             {% else %}
               {% if site.data.coauthors[author.last] %}
                 and <a class="coauthor" href="{{site.data.coauthors[author.last].url}}" target="_blank">{{author.last}}, {{author.first}}</a>
@@ -57,20 +57,19 @@
         {% endif %}
       {% endfor %}
     </div>
-
-    <span class="periodical">
-    {% if entry.type == "article" %}
-      <b>{{entry.journal}}</b>
-    {% elsif entry.type == "inproceedings" %}
-      <b>In {{entry.booktitle}}</b>
-    {% endif %}
-    {% if entry.year %}
-      {{entry.year}}
-    {% endif %}
-    </span>
+    <div class="">
+      {% if entry.type == "article" %}
+      <i class="fi-book top fi-icon-color-secondary" data-tooltip title="Journal"></i><span class="font-italic">&nbsp;{{entry.journal}}</span>
+      {% elsif entry.type == "inproceedings" %}
+      <i class="fi-book top fi-icon-color-secondary" data-tooltip title="Book"></i><span class="font-italic">&nbsp;In {{entry.booktitle}}</span>
+      {% endif %}
+      {% if entry.year %}
+        {{entry.year}}
+      {% endif %}
+    </div>
   {% endif %}
 
-  <span class="links">
+  <div class="links padding-top-1 small button-group">
 <!--   {% if entry.abstract %}
     [<a class="abstract">Abs</a>]
   {% endif %} -->
@@ -78,44 +77,49 @@
     <a href="{{entry.url}}" target="_blank" class="button small primary">link</a>
   {% endif %}
   {% if entry.arxiv %}
-    [<a href="http://arxiv.org/abs/{{ entry.arxiv }}" target="_blank" class="button small primary">arXiv</a>]
+    <a href="http://arxiv.org/abs/{{ entry.arxiv }}" target="_blank" class="button small primary">arXiv</a>
   {% endif %}
   {% if entry.html %}
-    [<a href="{{ entry.html }}" target="_blank" class="button small primary">HTML</a>]
+    <a href="{{ entry.html }}" target="_blank" class="button small primary">HTML</a>
   {% endif %}
   <!-- {% if entry.pdf %}
     [<a href="{{ entry.pdf | prepend: '/assets/pdf/' | prepend: site.baseurl | prepend: site.url }}" target="_blank">PDF</a>]
   {% endif %} -->
-  {% if entry.pdf %}
-    [<a href="{{entry.pdf}}" target="_blank" class="button small primary">PDF</a>]
+  {% if entry.file %}
+    <a href="{{entry.file}}" target="_blank" class="button small warning">PDF</a>
   {% endif %}
   {% if entry.supp %}
-    [<a href="{{ entry.supp | prepend: '/assets/pdf/' | prepend: site.baseurl | prepend: site.url }}" target="_blank" class="button small primary">Supp</a>]
+    <a href="{{ entry.supp | prepend: '/assets/pdf/' | prepend: site.baseurl | prepend: site.url }}" target="_blank"class="button small primary">Supp</a>]
   {% endif %}
   <!-- {% if entry.poster %}
     [<a href="{{ entry.poster | prepend: '/assets/pdf/' | prepend: site.baseurl | prepend: site.url }}" target="_blank">Poster</a>]
   {% endif %} -->
   {% if entry.video %}
-    [<a href="{{ entry.video }}" target="_blank" class="button small primary">Video</a>]
+    <a href="{{ entry.video }}" target="_blank" class="button small primary">Video</a>
   {% endif %}
   {% if entry.slides %}
-    [<a href="{{ entry.slides | prepend: '/assets/pdf/' | prepend: site.baseurl | prepend: site.url }}" target="_blank" class="button small primary">Slides</a>]
+    <a href="{{ entry.slides | prepend: '/assets/pdf/' | prepend: site.baseurl | prepend: site.url }}" target="_blank" class="button small primary">Slides</a>
   {% endif %}
   {% if entry.poster %}
-    [<a href="{{ entry.poster }}" target="_blank" class="button small primary">Poster</a>]
+    <a href="{{ entry.poster }}" target="_blank" class="button small primary">Poster</a>
   {% endif %}
   {% if entry.code %}
-    [<a href="{{ entry.code }}" target="_blank" class="button small primary">Code</a>]
+    <a href="{{ entry.code }}" target="_blank" class="button small primary">Code</a>
   {% endif %}
 
-  </span>
+  {% if entry.abstract %}
+  <div class="accordion" data-accordion data-allow-all-closed="true">
+    <div class="accordion-item" data-accordion-item>
+      <a href="#" class="button small success">Abstract</a>
+      <div class="accordion-content" data-tab-content>
+        <p>{{ entry.abstract }}</p>
+      </div>
+    </div>
+  </div>
+  {% endif %}
 
-  <!-- Hidden abstract block -->
-  <!-- {% if entry.abstract %}
-  <span class="abstract hidden">
-    <p>{{ entry.abstract }}</p>
-  </span>
-  {% endif %} -->
+  </div>
+
   <span class="notes">
     {% if entry.notes %}
       {{entry.notes}}

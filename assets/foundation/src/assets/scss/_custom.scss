@@ -17,3 +17,21 @@
 .fi-icon-color-secondary {
     color: $secondary-color;
 }
+
+.color-white {
+    color: #ffffff !important;
+}
+
+.hover-underline {
+    &:hover {
+        text-decoration: underline !important;
+    }
+}
+
+.site-footer {
+    background-color: #24272d;
+}
+
+main {
+    min-height: 60vh;
+}

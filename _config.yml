@@ -7,6 +7,9 @@ url: "https://nifty-pike-8810d6.netlify.app/" # the base hostname & protocol for
 
 JEKYLL_ENV: "production"
 address: "7 Trinity St, London SE1 1DB"
+address_1: "Britannia House"
+address_2: "Kings College London, Chemistry Department"
+address_3: "7 Trinity St, London SE1 1DB"
 
 # For jekyll-scholar plugin for Bibtex
 
@@ -15,8 +18,7 @@ collections:
     output: false
   research:
     output: true
-  publication:
-    output: true
+    
 
 scholar:
 
