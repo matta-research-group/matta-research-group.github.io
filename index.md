@@ -14,18 +14,21 @@ intro_image_hide_on_mobile: true
 We are a computational materials modelling group based at King's College London in the Department of Chemistry.
 <!-- short description to be updated. I will also add an image placeholder. -->
 
-# Funding
-
-<!-- icons of funding agencies here -->
 
 # News
 
 01/04/22 - Micaela's official start date!
  
+# Funding
+
+<!-- icons of funding agencies here -->
 
 
 
 # examples 
 
-https://quantchemdev.github.io/index.html i like the  image banner, the layout, the news with embedded twitter feed, but i would rather have a bullet point list next to the tweets. the contact part at the bottom is also nice.
+https://www.titiricigroup.com This is a great example of what i need
 
+https://quantchemdev.github.io/index.html i like the  image banner, the layout, the news with embedded twitter feed, but i would rather have a bullet point list next to the tweets
+
+https://www.martinmartinezlab.com I like the dark top menu, with space for a logo, and the dark bottom ribbon with contact info. 
