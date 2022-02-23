@@ -20,7 +20,7 @@ collections:
 scholar:
 
   last_name: Matta
-  first_name: [Micaela, "M"]
+  first_names: [Micaela, "M"]
 
   style: apa
   locale: en

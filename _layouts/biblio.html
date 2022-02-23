@@ -28,14 +28,14 @@
         {% assign trim_first = author.first | remove: "<sup>#</sup>" %}
         {% if forloop.length == 1 %}
           {% if author.last == site.scholar.last_name and site.scholar.first_names contains trim_first %}
-            <em>{{author.last}}, {{author.first}}</em>
+            <b>{{author.last}}, {{author.first}}</b>
           {% else %}
             {{author.last}}, {{author.first}}
           {% endif %}
         {% else %}
           {% unless forloop.last %}
             {% if author.last == site.scholar.last_name and site.scholar.first_names contains trim_first %}
-              <em>{{author.last}}, {{author.first}}</em>,
+              <b>{{author.last}}, {{author.first}}</b>,
             {% else %}
               {% if site.data.coauthors[author.last] %}
                 <a class="coauthor" href="{{site.data.coauthors[author.last].url}}" target="_blank">{{author.last}}, {{author.first}}</a>,
@@ -45,7 +45,7 @@
             {% endif %}
           {% else %}
             {% if author.last == site.scholar.last_name and site.scholar.first_names contains trim_first %}
-              and <em>{{author.last}}, {{author.first}}</em>
+              and <b>{{author.last}}, {{author.first}}</b>
             {% else %}
               {% if site.data.coauthors[author.last] %}
                 and <a class="coauthor" href="{{site.data.coauthors[author.last].url}}" target="_blank">{{author.last}}, {{author.first}}</a>
@@ -60,9 +60,9 @@
 
     <span class="periodical">
     {% if entry.type == "article" %}
-      <em>{{entry.journal}}</em>
+      <b>{{entry.journal}}</b>
     {% elsif entry.type == "inproceedings" %}
-      <em>In {{entry.booktitle}}</em>
+      <b>In {{entry.booktitle}}</b>
     {% endif %}
     {% if entry.year %}
       {{entry.year}}
