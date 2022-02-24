@@ -13,13 +13,9 @@
         </div>
         <div class="top-bar-right">
           <ul class="menu">
-            <li><a href="/" class="color-white hover-underline">Home</a></li>
-            <li><a href="/research" class="color-white hover-underline">Research</a></li>
-            <li><a href="/publications" class="color-white hover-underline">Publications</a></li>
-            <li><a href="/team" class="color-white hover-underline">Team</a></li>
-            <li><a href="/teaching" class="color-white hover-underline">Teaching</a></li>
-            <li><a href="/join" class="color-white hover-underline">Join</a></li>
-            <li><a href="/contact" class="color-white hover-underline">Contact</a></li>
+            {% for menu_item in site.data.site_nav %}
+              <li><a href="{% if menu_item.url contains '://' %}{{ menu_item.url }}{% else %}{{ site.url }}{{ menu_item.url }}{% endif %}" class="color-white hover-underline">{{ menu_item.name }}</a></li>
+            {% endfor %}
           </ul>
         </div>
       </div>

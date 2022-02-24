@@ -7,6 +7,14 @@ Jekyll site for Matta Research group.
   - `bundle install`
   - `jekyll serve`
 
+# Site manual
+
+## Site navigation
+
+Manage site wide navigation from `_data/site_nav.yml`. Every entry represents a menu item with its name and URL it points to. The URL can be a relative link like `/research` or a URL like 'https://example.com'. Make sure to use 'http:// or https://' for web links
+
+
+
 # Credits
 
 ## CSS

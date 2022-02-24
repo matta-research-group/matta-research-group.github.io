@@ -98,7 +98,7 @@ Research
   <div class="grid-container">
     <div class="grid-x grid-margin-x grid-margin-y">
       <div class="lead cell small-12 medium-6">
-        <h3 class="separator-left">Our Research</h3>
+        <h3 class="separator-left font-bold">Our Research</h3>
         {{ page.research_text }}
         <div class="margin-top-2"><a class="button primary rounded" href="/research">Research</a></div>
       </div>
@@ -119,7 +119,7 @@ Research
         <img class="img-responsive" alt="image" src="{{ page.publications_image }}">
       </div>
       <div class="lead cell small-12 medium-6">
-        <h3 class="separator-right">Publications</h3>
+        <h3 class="separator-right font-bold">Publications</h3>
         <div class="text-right">{{ page.publications_text }}</div>
         <div class="margin-top-2 text-right"><a class="button primary rounded" href="/publications">Know more</a></div>
       </div>
@@ -131,7 +131,7 @@ Research
   <div class="grid-container">
     <div class="grid-x grid-margin-x grid-margin-y">
       <div class="lead cell small-12 medium-6">
-        <h3 class="separator-left">Publications</h3>
+        <h3 class="separator-left font-bold">Publications</h3>
         <div class="">{{ page.publications_text }}</div>
         <div class="margin-top-2"><a class="button primary rounded" href="/publications">Know more</a></div>
       </div>
@@ -143,34 +143,57 @@ Research
 </div>
 
 {% comment %}
-Twitter
+Funding
+{% endcomment %}
+<div class="grid-container homepage-funding margin-bottom-3 margin-top-3">
+  <h3 class="separator-center font-bold margin-bottom-3">{{ page.funding_section_title }}</h3>
+  <div class="grid-x grid-margin-x grid-margin-y small-up-2 medium-up-3">
+    {% for funding_image in site.data.homepage.funding_section_images %}
+    <div class="cell text-center">
+      <img alt="{{ funding_image.name }}" src="{% if funding_image.url contains '://' %}{{ funding_image.url }}{% else %}{{ site.url }}{{ funding_image.url }}{% endif %}" data-tooltip class="top" title="{{ funding_image.name }}">
+    </div>
+    {% endfor %}
+  </div>
+</div>
+
+{% comment %}
+News and Twitter
 {% endcomment %}
 <div class="grid-container">
   <div class="grid-x grid-margin-x grid-margin-y">
+    {% comment %}
+    News
+    {% endcomment %}
     <div class="cell small-12 medium-6">
-      <h3>Research News</h3>
-      {% for research in site.research %}
-      <div class="grid-x grid-margin-x grid-margin-y margin-top-3 padding-top-3">
+      <h3 class="separator-left font-bold margin-bottom-2">{{ page.news_section_title }}</h3>
+      {% for news in site.news %}
+      <div class="grid-x grid-margin-x grid-margin-y">
         {% comment %}
-        photo
+        News
         {% endcomment %}
-        <div class="cell small-12 medium-4 text-center">
-          <img alt="{{ research.primary_photo }}" src="{{ site.url }}{{ research.primary_photo | relative_url }}" class="bordered shadow" style="height: 200px; width: auto;">
-        </div>
-        {% comment %}
-        Information
-        {% endcomment %}
-        <div class="cell small-12 medium-8">
-          <h4 class="font-bold separator-left">{{ research.title }}</h4>
-          <p>{{ research.summary }}</p>
-          <a class="button primary rounded hollow" href="{{ site.url }}{{ research.url | relative_url }}">Read More</a>
+        <div class="cell small-12 callout">
+          <p>{{ news.content }}</p>
+          <div class="clearfix">
+              <div class="float-left"><span class="label secondary rounded" data-tooltip class="top" title="Date"><i class="fi-calendar padding-right-1"></i>{{ news.event_date }}</span></div>
+              <div class="margin-left-1 float-left"><span class="top" data-tooltip title="Location"><span class="label success rounded"><i class="fi-home padding-right-1"></i>{{ news.location }}</span></span></div>
+          </div>
         </div>
       </div>
     {% endfor %}
     </div>
-    <div class="cell small-12 medium-6">
-      <div class='jekyll-twitter-plugin' align="center">
-        {% twitter https://twitter.com/RNTata2000 maxwidth=500 limit=2 %}
+    {% comment %}
+    Twitter
+    {% endcomment %}
+    <div class="cell small-12 medium-6 text-center">
+      {% comment %}
+      Follow button
+      {% endcomment %}
+      <a href="https://twitter.com/micaelamatta?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @MicaelaMatta</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+      {% comment %}
+      Twitter Timeline
+      {% endcomment %}
+      <div class='jekyll-twitter-plugin' align="">
+        {% twitter https://twitter.com/micaelamatta limit=2 %}
       </div>
     </div>
   </div>

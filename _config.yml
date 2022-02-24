@@ -18,6 +18,8 @@ collections:
     output: false
   research:
     output: true
+  news:
+    output: false
     
 
 scholar:
