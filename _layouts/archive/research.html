@@ -15,6 +15,12 @@ Renders the archive page for research at /research
     <p class="text-center lead">{{ page.content }}</p>
 </div>
 
+{% if page.hero_image %}
+  <div class="grid-container text-center">
+    <img alt="{{ page.title }}" src="{% if page.hero_image contains '://' %}{{ page.hero_image }}{% else %}{{ site.url }}{{ page.hero_image }}{% endif %}">
+  </div>
+{% endif %}
+
 
 {% comment %}
 Research items
@@ -26,7 +32,7 @@ Research items
         photo
         {% endcomment %}
         <div class="cell small-12 medium-4 text-center">
-          <img alt="{{ research.primary_photo }}" src="{{ site.url }}{{ research.primary_photo | relative_url }}" class="bordered shadow" style="height: 200px; width: auto;">
+          <img alt="{{ research.primary_photo }}" src="{% if research.hero_image contains '://' %}{{ research.hero_image }}{% else %}{{ site.url }}{{ research.hero_image }}{% endif %}" class="bordered shadow" style="height: 200px; width: auto;">
         </div>
         {% comment %}
         Information

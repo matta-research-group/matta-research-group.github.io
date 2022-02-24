@@ -1,6 +1,7 @@
 ---
 ---
 
+<div class="margin-bottom-3">
 {% if entry.abbr %}
   {% if site.data.venues[entry.abbr] %}
     <abbr><a href="{{site.data.venues[entry.abbr].url}}" target="_blank" class="button small primary">{{entry.abbr}}</a></abbr>
@@ -59,12 +60,12 @@
     </div>
     <div class="">
       {% if entry.type == "article" %}
-      <i class="fi-book top fi-icon-color-secondary" data-tooltip title="Journal"></i><span class="font-italic">&nbsp;{{entry.journal}}</span>
+      <i class="fi-book top fi-icon-color-secondary" data-tooltip title="Journal"></i><span class="font-italic">&nbsp;{{entry.journal}},&nbsp;{% if entry.volume %}{{ entry.volume }}{% endif %},&nbsp;{% if entry.pages %}{{ entry.pages }}{% endif %}</span>
       {% elsif entry.type == "inproceedings" %}
-      <i class="fi-book top fi-icon-color-secondary" data-tooltip title="Book"></i><span class="font-italic">&nbsp;In {{entry.booktitle}}</span>
+      <i class="fi-book top fi-icon-color-secondary" data-tooltip title="Book"></i><span class="font-italic">&nbsp;In {{entry.booktitle}},&nbsp;{% if entry.volume %}{{ entry.volume }}{% endif %},&nbsp;{% if entry.pages %}{{ entry.pages }}{% endif %}</span>
       {% endif %}
       {% if entry.year %}
-        {{entry.year}}
+        ({{entry.year}})
       {% endif %}
     </div>
   {% endif %}
@@ -126,4 +127,5 @@
     {% endif %}
   </span>
 
+</div>
 </div>

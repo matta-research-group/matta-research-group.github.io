@@ -4,7 +4,7 @@ layout: default
 {% comment %}]
 Hero image
 {% endcomment %}
-<div class="home-hero-image">
+<div class="home-hero-image" style="background: url({% if page.hero_image contains '://' %}{{ page.hero_image }}{% else %}{{ site.url }}{{ page.hero_image }}{% endif %}) no-repeat center center;">
   <div class="grid-container">
     <div class="grid-x grid-margin-x">
       <div class="cell small-12 margin-top-3">
@@ -103,7 +103,7 @@ Research
         <div class="margin-top-2"><a class="button primary rounded" href="/research">Research</a></div>
       </div>
       <div class="cell small-12 medium-6">
-        <img class="img-responsive" alt="image" src="{{ page.research_image }}">
+        <img class="img-responsive" alt="image" src="{% if page.research_image contains '://' %}{{ page.research_image }}{% else %}{{ site.url }}{{ page.research_image }}{% endif %}">
       </div>
     </div>
   </div>
