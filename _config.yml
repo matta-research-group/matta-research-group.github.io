@@ -23,7 +23,7 @@ collections:
   research:
     output: true
   news:
-    output: false
+    output: true
     
 
 scholar:
@@ -80,4 +80,9 @@ defaults:
       type: "research"
     values:
       layout: "single/research"
+  - scope:
+      path: ""
+      type: "news"
+    values:
+      layout: "single/news"
   

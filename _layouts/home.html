@@ -167,18 +167,30 @@ News and Twitter
     <div class="cell small-12 medium-6">
       <h3 class="separator-left font-bold margin-bottom-2">{{ page.news_section_title }}</h3>
       {% for news in site.news %}
-      <div class="grid-x grid-margin-x grid-margin-y">
-        {% comment %}
-        News
-        {% endcomment %}
-        <div class="cell small-12 callout">
-          <p>{{ news.content }}</p>
-          <div class="clearfix">
-              <div class="float-left"><span class="label secondary rounded" data-tooltip class="top" title="Date"><i class="fi-calendar padding-right-1"></i>{{ news.event_date }}</span></div>
-              <div class="margin-left-1 float-left"><span class="top" data-tooltip title="Location"><span class="label success rounded"><i class="fi-home padding-right-1"></i>{{ news.location }}</span></span></div>
+        <div class="grid-x grid-margin-x grid-margin-y">
+          {% if news.hero_image != "" %}
+            <div class="cell small-12 medium-4">
+              <img alt="{{ news.title }}" src="{% if news.hero_image contains '://' %}{{ news.hero_image }}{% else %}{{ site.url }}{{ news.hero_image }}{% endif %}"title="{{ news.title }}" class="thumbnail">
+            </div>
+          {% endif %}
+          {% comment %}
+          News
+          {% endcomment %}
+          {% if news.hero_image != "" %}
+            <div class="cell small-12 medium-8">
+          {% else %}
+            <div class="cell small-12">
+          {% endif %}
+            <p>{{ news.excerpt }}</p>
+            <div>
+              <a href="{{ news.url }}" class="button primary hollow rounded">Read More</a>
+            </div>
+            <div class="clearfix">
+                <div class="float-left color-secondary">{{ news.date | date: "%b %d, %Y" }}</span></div>
+            </div>
           </div>
         </div>
-      </div>
+        <hr/>
     {% endfor %}
     </div>
     {% comment %}
