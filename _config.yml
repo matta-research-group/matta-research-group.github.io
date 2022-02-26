@@ -9,6 +9,11 @@ address_1: "Britannia House"
 address_2: "Kings College London, Chemistry Department"
 address_3: "7 Trinity St, London SE1 1DB"
 site_logo: "http://via.placeholder.com/80x40" # Site logo
+github_url: "https://github.com"
+facebook_url: "https://github.com"
+instagram_url: "https://github.com"
+youtube_url: "https://github.com"
+twitter_url: "https://github.com"
 
 # For jekyll-scholar plugin for Bibtex
 
