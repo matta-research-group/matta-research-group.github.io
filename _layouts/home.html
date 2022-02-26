@@ -4,7 +4,7 @@ layout: default
 {% comment %}]
 Hero image
 {% endcomment %}
-<div class="home-hero-image" style="background: url({% if page.hero_image contains '://' %}{{ page.hero_image }}{% else %}{{ site.url }}{{ page.hero_image }}{% endif %}) no-repeat center center;">
+<div class="page-hero-image" style="background: url({% if page.hero_image contains '://' %}{{ page.hero_image }}{% else %}{{ site.url }}{{ page.hero_image }}{% endif %}) no-repeat center center;">
   <div class="grid-container">
     <div class="grid-x grid-margin-x">
       <div class="cell small-12 margin-top-3">
@@ -150,7 +150,7 @@ Funding
   <div class="grid-x grid-margin-x grid-margin-y small-up-2 medium-up-3">
     {% for funding_image in site.data.homepage.funding_section_images %}
     <div class="cell text-center">
-      <img alt="{{ funding_image.name }}" src="{% if funding_image.url contains '://' %}{{ funding_image.url }}{% else %}{{ site.url }}{{ funding_image.url }}{% endif %}" data-tooltip class="top" title="{{ funding_image.name }}">
+      <img alt="{{ funding_image.name }}" src="{% if funding_image.url contains '://' %}{{ funding_image.url }}{% else %}{{ site.url }}{{ funding_image.url }}{% endif %}" title="{{ funding_image.name }}">
     </div>
     {% endfor %}
   </div>

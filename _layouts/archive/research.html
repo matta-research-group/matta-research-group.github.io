@@ -2,6 +2,12 @@
 layout: default
 ---
 
+{% comment %}]
+Hero image
+{% endcomment %}
+<div class="page-hero-image" style="background: url({% if page.hero_image contains '://' %}{{ page.hero_image }}{% else %}{{ site.url }}{{ page.hero_image }}{% endif %}) no-repeat center center;">
+</div>
+
 {% comment %}
 
 @author Akash Kumar Sharma <vyom@vyom.site></vyom>
@@ -11,15 +17,8 @@ Renders the archive page for research at /research
 {% endcomment %}
 
 <div class="grid-container">
-    <h1 class="separator-center font-bold margin-top-3">{{ page.title }}</h1>
-    <p class="text-center lead">{{ page.content }}</p>
+    <h1 class="separator-center font-bold margin-top-2">{{ page.title }}</h1>
 </div>
-
-{% if page.hero_image %}
-  <div class="grid-container text-center">
-    <img alt="{{ page.title }}" src="{% if page.hero_image contains '://' %}{{ page.hero_image }}{% else %}{{ site.url }}{{ page.hero_image }}{% endif %}">
-  </div>
-{% endif %}
 
 
 {% comment %}
