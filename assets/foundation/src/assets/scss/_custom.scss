@@ -14,9 +14,10 @@
     border-bottom-right-radius: 2rem;
 }
 
-.fi-icon-color-secondary {
+.fi-icon-color-secondary, .color-secondary {
     color: $secondary-color;
 }
+
 
 .color-white {
     color: #ffffff !important;
@@ -35,8 +36,7 @@
 main {
     min-height: 60vh;
 }
-.home-hero-image {
-    // background: url(https://images.pexels.com/photos/4947573/pexels-photo-4947573.jpeg?crop=entropy&cs=srgb&dl=pexels-maria-orlova-4947573.jpg&fit=crop&fm=jpg&h=1280&w=1920) no-repeat center center; 
+.page-hero-image {
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -46,4 +46,8 @@ main {
 
 .background-white-translucent {
     background: rgba(253, 255, 253, 0.6);
+}
+
+.icon-size-lg {
+    font-size: 30px;
 }

@@ -8,7 +8,7 @@ layout: default
 
 {% if page.hero_image %}
   <div class="grid-container text-center margin-top-3">
-    <img src="{% if page.hero_image contains '://' %}{{ page.hero_image }}{% else %}{{ site.url }}{{ page.hero_image }}{% endif %}" alt="{{ page.title }}" class="img-responsive border shadow" style="max-height: 500px; width: auto;">
+    <img src="{% if page.hero_image contains '://' %}{{ page.hero_image }}{% else %}{{ site.url }}{{ page.hero_image }}{% endif %}" alt="{{ page.title }}" class="img-responsive" style="max-height: 500px; width: auto;">
   </div>
 {% endif %}
 
