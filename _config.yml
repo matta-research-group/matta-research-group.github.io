@@ -8,6 +8,7 @@ JEKYLL_ENV: "development"
 address_1: "Britannia House"
 address_2: "Kings College London, Chemistry Department"
 address_3: "7 Trinity St, London SE1 1DB"
+site_logo: "http://via.placeholder.com/80x40" # Site logo
 
 # For jekyll-scholar plugin for Bibtex
 
