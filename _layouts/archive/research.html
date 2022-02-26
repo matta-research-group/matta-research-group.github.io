@@ -31,7 +31,7 @@ Research items
         photo
         {% endcomment %}
         <div class="cell small-12 medium-4 text-center">
-          <img alt="{{ research.primary_photo }}" src="{% if research.hero_image contains '://' %}{{ research.hero_image }}{% else %}{{ site.url }}{{ research.hero_image }}{% endif %}" class="bordered shadow" style="height: 200px; width: auto;">
+          <img alt="{{ research.primary_photo }}" src="{% if research.hero_image contains '://' %}{{ research.hero_image }}{% else %}{{ site.url }}{{ research.hero_image }}{% endif %}" style="height: 200px; width: auto;">
         </div>
         {% comment %}
         Information

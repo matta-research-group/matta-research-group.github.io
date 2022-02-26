@@ -5,10 +5,12 @@ description: Join
 hero_image: "/assets/images/join/join-page-image.jpg"
 ---
 
-We have an opening for a PhD student with a 2022 flexible start date. See the advertisement or get in touch with me for more details.
-
+<div>
 <h4 class="margin-top-2 margin-bottom-1 font-bold">PhD Position</h4>
-<a class="button primary" href="https://www.findaphd.com/phds/project/computational-design-of-bioinspired-materials-for-organic-bioelectronics/?p141631" target="_blank">View Position</a>
+<a class="button primary rounded" href="https://www.findaphd.com/phds/project/computational-design-of-bioinspired-materials-for-organic-bioelectronics/?p141631" target="_blank">View Position</a></div>
+
+
+We have an opening for a PhD student with a 2022 flexible start date. See the advertisement or get in touch with me for more details.
 
 <h4 class="margin-top-2 margin-bottom-1 font-bold">Postdoc positions</h4>
 
