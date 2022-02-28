@@ -69,10 +69,10 @@ $global-font-size: 100%;
 $global-width: rem-calc(1200);
 $global-lineheight: 1.5;
 $foundation-palette: (
-  primary: #1F363D,
-  secondary: #9EC1A3,
-  success: #CFE0C3,
-  warning: #40798C,
+  primary: #40798C,
+  secondary: #CFE0C3,
+  success: #70A9A1,
+  warning: #1F363D,
   alert: #9EC1A3,
 );
 $light-gray: #e6e6e6;
@@ -685,7 +685,7 @@ $prototype-separator-breakpoints: $global-prototype-breakpoints;
 $prototype-separator-align: center;
 $prototype-separator-height: rem-calc(2);
 $prototype-separator-width: 3rem;
-$prototype-separator-background: $primary-color;
+$prototype-separator-background: $secondary-color;
 $prototype-separator-margin-top: $global-margin;
 
 // 40. Prototype Shadow

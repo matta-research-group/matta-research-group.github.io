@@ -51,3 +51,8 @@ main {
 .icon-size-lg {
     font-size: 30px;
 }
+
+ol.bibliography li::marker {
+    display: none !important;
+    color: white !important;
+}

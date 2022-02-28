@@ -57,31 +57,36 @@
                 <h4 class="color-white font-wide font-bold"><div class="text-center"><img alt="{{ site.title }}" src="{% if site.site_logo contains '://' %}{{ site.site_logo }}{% else %}{{ site.url }}{{ site.site_logo }}{% endif %}"></div>{{ site.title }}</h4>
                 <ul class="menu icon-size-lg">
                     
-                    {% if site.github_url %}
+                    {% if site.github_url != nil %}
                         <li>
-                            <a href="{{ site.github_url }}" alt="Github" class="color-white" href="{{ site.github_url }}"><i class="fi-social-github top" data-tooltip title="Github"></i></a>
+                            <a href="{{ site.github_url }}" alt="Github" class="color-white" href="{{ site.github_url }}"><i class="fi-social-github "title="Github"></i></a>
                         </li>
                     {% endif %}
-                    {% if site.facebook_url %}
+                    {% if site.facebook_url != nil %}
                         <li>
-                            <a href="{{ site.facebook_url }}" alt="Facebook" class="color-white" href="{{ site.facebook_url }}"><i class="fi-social-facebook top" data-tooltip title="Facebook"></i></a>
+                            <a href="{{ site.facebook_url }}" alt="Facebook" class="color-white" href="{{ site.facebook_url }}"><i class="fi-social-facebook " title="Facebook"></i></a>
                         </li>
                     {% endif %}
-                    {% if site.twitter_url %}
+                    {% if site.twitter_url != nil %}
                         <li>
-                            <a href="{{ site.twitter_url }}" alt="Twitter" class="color-white" href="{{ site.twitter_url }}"><i class="fi-social-twitter top" data-tooltip title="Twitter"></i></a>
+                            <a href="{{ site.twitter_url }}" alt="Twitter" class="color-white" href="{{ site.twitter_url }}"><i class="fi-social-twitter " title="Twitter"></i></a>
                         </li>
                     {% endif %}
-                    {% if site.instagram_url %}
+                    {% if site.instagram_url != nil %}
                         <li>
-                            <a href="{{ site.instagram_url }}" alt="Instagram" class="color-white" href="{{ site.instagram_url }}"><i class="fi-social-instagram top" data-tooltip title="Instagram"></i></a>
+                            <a href="{{ site.instagram_url }}" alt="Instagram" class="color-white" href="{{ site.instagram_url }}"><i class="fi-social-instagram" title="Instagram"></i></a>
                         </li>
                     {% endif %}
-                    {% if site.youtube_url %}
+                    {% if site.youtube_url != nil %}
                         <li>
-                            <a href="{{ site.youtube_url }}" alt="YouTube" class="color-white" href="{{ site.youtube_url }}"><i class="fi-social-youtube top" data-tooltip title="YouTube"></i></a>
+                            <a href="{{ site.youtube_url }}" alt="YouTube" class="color-white" href="{{ site.youtube_url }}"><i class="fi-social-youtube" title="YouTube"></i></a>
                         </li>
-                    {% endif %}            
+                    {% endif %}
+                    {% if site.email != nil %}
+                        <li>
+                            <a href="mailto:{{ site.email }}" class="color-white" alt="Email"><i class="fi-mail padding-right-1"></i></a>
+                        </li>    
+                    {% endif %}       
                 </ul>
             </div>
               {% comment %}
@@ -95,7 +100,6 @@
                     <p class="color-white font-italic text-underline">Contact Info </p>
                     <p class="color-white">{{ site.address_1 }}, {{ site.address_2 }}</p>
                     <p class="font-bold color-white">{{ site.address_3 }}</p>
-                    <p class="lead font-bold "><a href="mailto:{{ site.email }}" class="color-white"><i class="fi-mail padding-right-1"></i>Email</a></p>
                 </div>
             </div>
         </div>
