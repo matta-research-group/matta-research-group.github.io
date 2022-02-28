@@ -1,6 +1,10 @@
 ---
 ---
-
+<div class="grid-x grid-margin-x grid-margin-y">
+  <div class="cell small-12 medium-4 text-center">
+    <img alt="{{ entry.title }}" src="https://picsum.photos/300" style="height: 200px; width: auto;">
+  </div>
+  <div class="cell small-12 medium-8">
 <div class="margin-bottom-3">
 {% if entry.abbr %}
   {% if site.data.venues[entry.abbr] %}
@@ -24,7 +28,7 @@
     Author
     {% endcomment %}
     <div class="author">
-      <i class="fi-torsos-female-male top fi-icon-color-secondary" data-tooltip title="Authors"></i>      
+      <i class="fi-torsos-female-male fi-icon-color-secondary" title="Authors"></i>      
       {% for author in entry.author_array %}
         {% assign trim_first = author.first | remove: "<sup>#</sup>" %}
         {% if forloop.length == 1 %}
@@ -60,9 +64,9 @@
     </div>
     <div class="">
       {% if entry.type == "article" %}
-      <i class="fi-book top fi-icon-color-secondary" data-tooltip title="Journal"></i><span class="font-italic">&nbsp;{{entry.journal}},&nbsp;{% if entry.volume %}{{ entry.volume }}{% endif %},&nbsp;{% if entry.pages %}{{ entry.pages }}{% endif %}</span>
+      <i class="fi-book fi-icon-color-secondary" title="Journal"></i><span class="font-italic">&nbsp;{{entry.journal}},&nbsp;{% if entry.volume %}{{ entry.volume }}{% endif %},&nbsp;{% if entry.pages %}{{ entry.pages }}{% endif %}</span>
       {% elsif entry.type == "inproceedings" %}
-      <i class="fi-book top fi-icon-color-secondary" data-tooltip title="Book"></i><span class="font-italic">&nbsp;In {{entry.booktitle}},&nbsp;{% if entry.volume %}{{ entry.volume }}{% endif %},&nbsp;{% if entry.pages %}{{ entry.pages }}{% endif %}</span>
+      <i class="fi-book fi-icon-color-secondary" title="Book"></i><span class="font-italic">&nbsp;In {{entry.booktitle}},&nbsp;{% if entry.volume %}{{ entry.volume }}{% endif %},&nbsp;{% if entry.pages %}{{ entry.pages }}{% endif %}</span>
       {% endif %}
       {% if entry.year %}
         ({{entry.year}})
@@ -129,3 +133,4 @@
 
 </div>
 </div>
+</div></div>
