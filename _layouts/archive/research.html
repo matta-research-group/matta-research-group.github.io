@@ -6,6 +6,15 @@ layout: default
 Hero image
 {% endcomment %}
 <div class="page-hero-image" style="background: url({% if page.hero_image contains '://' %}{{ page.hero_image }}{% else %}{{ site.url }}{{ page.hero_image }}{% endif %}) no-repeat center center;">
+  <div class="grid-container">
+      <div class="grid-x grid-margin-x">
+        <div class="cell small-12 margin-top-3">
+          <div class="text-center padding-top-3 margin-top-3 font-bold">
+            <h1><span class="color-white font-wide text-underline font-bold margin-top-3">{{ page.title}}</span></h1>
+          </div>
+        </div>
+      </div>
+    </div>
 </div>
 
 {% comment %}
@@ -14,11 +23,12 @@ Hero image
 
 Renders the archive page for research at /research
 
-{% endcomment %}
+
 
 <div class="grid-container">
     <h1 class="separator-center font-bold margin-top-2">{{ page.title }}</h1>
 </div>
+{% endcomment %}
 
 
 {% comment %}
@@ -39,7 +49,7 @@ Research items
         <div class="cell small-12 medium-8">
           <h4 class="font-bold separator-left">{{ research.title }}</h4>
           <p>{{ research.summary }}</p>
-          <a class="button primary rounded hollow" href="{{ site.url }}{{ research.url | relative_url }}">Read More</a>
+          <a class="button primary rounded" href="{{ site.url }}{{ research.url | relative_url }}">Read More</a>
         </div>
       </div>
     {% endfor %}

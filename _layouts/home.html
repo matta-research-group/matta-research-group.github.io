@@ -8,9 +8,9 @@ Hero image
   <div class="grid-container">
     <div class="grid-x grid-margin-x">
       <div class="cell small-12 margin-top-3">
-        <div class="text-center padding-3 font-bold">
-          <h1><span class="color-white font-wide">{{ page.hero_title}}</span></h1>
-          <a href="/research" class="button success rounded margin-top-2">Our Research</a>
+        <div class="text-center padding-top-3 margin-top-3 font-bold">
+          <h1><span class="color-white font-wide font-bold">{{ page.hero_title}}</span></h1>
+          <a href="/research" class="button primary rounded margin-top-2">Our Research</a>
         </div>
       </div>
     </div>
@@ -183,7 +183,7 @@ News and Twitter
           {% endif %}
             <p>{{ news.excerpt }}</p>
             <div>
-              <a href="{{ news.url }}" class="button primary hollow rounded">Read More</a>
+              <a href="{{ news.url }}" class="button primary rounded">Read More</a>
             </div>
             <div class="clearfix">
                 <div class="float-left color-secondary">{{ news.date | date: "%b %d, %Y" }}</span></div>

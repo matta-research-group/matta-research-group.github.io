@@ -2,7 +2,7 @@
 ---
 <div class="grid-x grid-margin-x grid-margin-y">
   <div class="cell small-12 medium-4 text-center">
-    <img alt="{{ entry.title }}" src="https://picsum.photos/300" style="height: 200px; width: auto;">
+    <img alt="{{ entry.title }}" src="{% if entry.image %}{% if entry.image contains '://' %}{{ entry.image }}{% else %}{{ site.url }}{{ entry.image }}{% endif %}{% else %}{% if page.publication_photo contains '://' %}{{ page.publication_photo }}{% else %}{{ site.url }}{{ page.publication_photo }}{% endif %}{% endif %}" style="height: 200px; width: auto;">
   </div>
   <div class="cell small-12 medium-8">
 <div class="margin-bottom-3">
