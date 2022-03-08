@@ -176,7 +176,7 @@ $anchor-color-hover: scale-color($anchor-color, $lightness: -14%);
 $anchor-text-decoration: none;
 $anchor-text-decoration-hover: none;
 $hr-width: $global-width;
-$hr-border: 1px solid $medium-gray;
+$hr-border: 1px solid $primary-color;
 $hr-margin: rem-calc(20) auto;
 $list-lineheight: $paragraph-lineheight;
 $list-margin-bottom: $paragraph-margin-bottom;
@@ -685,7 +685,7 @@ $prototype-separator-breakpoints: $global-prototype-breakpoints;
 $prototype-separator-align: center;
 $prototype-separator-height: rem-calc(2);
 $prototype-separator-width: 3rem;
-$prototype-separator-background: $secondary-color;
+$prototype-separator-background: $primary-color;
 $prototype-separator-margin-top: $global-margin;
 
 // 40. Prototype Shadow
