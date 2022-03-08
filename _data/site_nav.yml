@@ -1,0 +1,14 @@
+# Site wide navigation
+
+- name: Research
+  url: "/research"
+- name: Publications
+  url: "/publications"
+- name: Teaching
+  url: "/teaching"
+- name: Team
+  url: "/team"
+- name: Join
+  url: "/join"
+- name: Contact
+  url: "/contact"

@@ -1,0 +1,58 @@
+/**
+* @author Akash Kumar Sharma <vyom@vyom.site>
+* Supplement to Foundation CSS
+*
+*/
+
+// Rounded corner for top left and bottom right of frame. Works best for images
+.tlbr-rounder-corner {
+    -moz-border-top-left-radius: 2rem;     
+    -webkit-border-bottom-right-radius: 2rem;
+    -moz-border-top-left-radius: 2rem;     
+    -webkit-border-bottom-right-radius: 2rem;
+    border-top-left-radius: 2rem;     
+    border-bottom-right-radius: 2rem;
+}
+
+.fi-icon-color-secondary, .color-secondary {
+    color: $secondary-color;
+}
+
+
+.color-white {
+    color: #ffffff !important;
+}
+
+.hover-underline {
+    &:hover {
+        text-decoration: underline !important;
+    }
+}
+
+.site-footer {
+    background-color: #24272d;
+}
+
+main {
+    min-height: 60vh;
+}
+.page-hero-image {
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    min-height: 80vh;
+}
+
+.background-white-translucent {
+    background: rgba(253, 255, 253, 0.6);
+}
+
+.icon-size-lg {
+    font-size: 30px;
+}
+
+ol.bibliography li::marker {
+    display: none !important;
+    color: white !important;
+}

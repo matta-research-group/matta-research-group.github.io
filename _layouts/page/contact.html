@@ -1,0 +1,124 @@
+---
+layout: default
+---
+
+{% comment %}]
+Hero image
+{% endcomment %}
+<div class="page-hero-image" style="background: url({% if page.hero_image contains '://' %}{{ page.hero_image }}{% else %}{{ site.url }}{{ page.hero_image }}{% endif %}) no-repeat center center;">
+    <div class="grid-container">
+        <div class="grid-x grid-margin-x">
+          <div class="cell small-12 margin-top-3">
+            <div class="text-center padding-top-3 margin-top-3 font-bold">
+              <h1><span class="color-white font-wide text-underline font-bold margin-top-3">{{ page.title}}</span></h1>
+            </div>
+          </div>
+        </div>
+      </div>
+</div>
+
+{% comment%}
+<div class="grid-container">
+    <h1 class="separator-center font-bold margin-top-3">{{ page.title }}</h1>
+</div>
+{% endcomment %}
+
+
+<div class="contact-page margin-top-3">
+    {% comment %}
+    first section with introduction to contact page
+    {% endcomment %}
+    <div class="grid-container">
+        <div class="lead margin-top-3 text-center separator-center">
+            {{ content }}
+        </div>
+    </div>
+    {% comment %}
+    <section class="grid-container">
+        <div class="grid-x grid-margin-x grid-margin-y">
+            <div class="cell small-12 medium-6">
+                <img class="radius bordered shadow" alt="London image" src="{{ site.url }}{{ site.baseurl }}{{ page.intro_image_1 }}">
+            </div>
+            <div class="cell small-12 medium-6">
+                <div class="grid-x grid-margin-x grid-margin-x">
+                    <div class="cell small-6">
+                        <img class="radius bordered shadow" alt="London image" src="{{ site.url }}{{ site.baseurl }}{{ page.intro_image_2 }}">
+                    </div>
+                    <div class="cell small-6">
+                        <img class="radius bordered shadow" alt="London image" src="{{ site.url }}{{ site.baseurl }}{{ page.intro_image_3 }}">
+                    </div>
+                </div>
+                <div class="lead margin-top-3 text-center separator-center">
+                    {{ content }}
+                </div>
+            </div>
+        </div>
+    </section>
+    {% endcomment %}
+
+    {% comment %}
+    <section class="grid-container margin-top-3 padding-top-3 padding-bottom-2">
+        <div class="grid-x grid-margin-x">
+            {% comment %}
+            Google map
+            {% endcomment %}
+            <div class="cell small-12 medium-6">
+                <div class="responsive-embed">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2483.736728495426!2d-0.09657258423034033!3d51.499698579633886!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x9b8a630b0ee600ed!2sBritannia%20House%20Kings%20College%20London%20Chemistry%20Department!5e0!3m2!1sen!2suk!4v1645262363701!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+            {% comment %}
+            Address and email
+            {% endcomment %}
+            <div class="cell small-12 medium-6">
+                {% comment %}
+                Address
+                {% endcomment %}
+                <div class="separator-center">
+                    <p class="subheader font-italic">Find us at: </p>
+                    <p class="">{{ page.address_1 }}</p>
+                    <p>{{ page.address_2 }}</p>
+                    <p class="font-bold">{{ page.address_3 }}</p>
+                </div>
+                {% comment %}
+                Email
+                {% endcomment %}
+                <div class="text-center margin-top-1">
+                    <p class="lead font-bold "><a href="mailto:{{ site.email }}" class="text-color-primary"><i class="fi-mail padding-right-1"></i>Email</a></p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    {% endcomment %}
+
+     {% comment %}
+            Address and email
+            {% endcomment %}
+            <div class="grid-container margin-top-3 margin-bottom-3">
+                {% comment %}
+                Address
+                {% endcomment %}
+                <div class="separator-center">
+                    <p class="subheader font-italic">Find us at: </p>
+                    <p class="">{{ page.address_1 }}</p>
+                    <p>{{ page.address_2 }}</p>
+                    <p class="font-bold">{{ page.address_3 }}</p>
+                </div>
+                {% comment %}
+                Email
+                {% endcomment %}
+                <div class="text-center margin-top-1">
+                    <p class="lead font-bold "><a href="mailto:{{ site.email }}" class="text-color-primary"><i class="fi-mail padding-right-1"></i>Email</a></p>
+                </div>
+            </div>
+
+    <div class="grid-container margin-top-3 margin-bottom-3">
+        <div class="responsive-embed">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2483.736728495426!2d-0.09657258423034033!3d51.499698579633886!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x9b8a630b0ee600ed!2sBritannia%20House%20Kings%20College%20London%20Chemistry%20Department!5e0!3m2!1sen!2suk!4v1645262363701!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </div>
+
+               
+    
+</div>

@@ -1,13 +1,16 @@
 ---
-title: Contact
-layout: contact
+title: Contact Us
+layout: page/contact
 description: Contact
-intro_image : "images/benjamin-davies-oja2ty_9zlm-unsplash.jpg"
-
+hero_image: "/assets/images/page-images/benjamin-davies-oja2ty_9zlm-unsplash.jpg"
+intro_image_1 : "/assets/images/page-images/benjamin-davies-oja2ty_9zlm-unsplash.jpg"
+intro_image_2 : "/assets/images/page-images/kings-college.jpg"
+intro_image_3 : "/assets/images/page-images/britannia-building.png"
+address_1: "Britannia House"
+address_2: "Kings College London, Chemistry Department"
+address_3: "7 Trinity St, London SE1 1DB"
 ---
 
-<!-- this page will have an image, a short text with a mailto: link (micaela.matta@kcl.ac.uk) and a google maps embedded showing the address-->
-
-We are located at Britannia House, the home of King's Chemistry Department.
+We are located at <b>Britannia House</b>, the home of <i>King’s Chemistry Department</i>.
 
 

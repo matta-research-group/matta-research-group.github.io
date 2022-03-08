@@ -1,0 +1,136 @@
+---
+---
+<div class="grid-x grid-margin-x grid-margin-y">
+  <div class="cell small-12 medium-4 text-center">
+    <img alt="{{ entry.title }}" src="{% if entry.image %}{% if entry.image contains '://' %}{{ entry.image }}{% else %}{{ site.url }}{{ entry.image }}{% endif %}{% else %}{% if page.publication_photo contains '://' %}{{ page.publication_photo }}{% else %}{{ site.url }}{{ page.publication_photo }}{% endif %}{% endif %}" style="height: 200px; width: auto;">
+  </div>
+  <div class="cell small-12 medium-8">
+<div class="margin-bottom-3">
+{% if entry.abbr %}
+  {% if site.data.venues[entry.abbr] %}
+    <abbr><a href="{{site.data.venues[entry.abbr].url}}" target="_blank" class="button small primary">{{entry.abbr}}</a></abbr>
+  {% else %}
+    <abbr>[{{entry.abbr}}]</abbr>
+  {% endif %}
+{% endif %}
+
+<div id="{{entry.key}}">
+  {% if entry.type == "thesis" %}
+    {{reference}}
+  {% else %}
+  {% comment %}
+  Journal title
+  {% endcomment %}
+  <div class="title">
+    <h5 class="font-bold">{{entry.title}}</h5>
+  </div>
+    {% comment %}
+    Author
+    {% endcomment %}
+    <div class="author">
+      <i class="fi-torsos-female-male fi-icon-color-secondary" title="Authors"></i>      
+      {% for author in entry.author_array %}
+        {% assign trim_first = author.first | remove: "<sup>#</sup>" %}
+        {% if forloop.length == 1 %}
+          {% if author.last == site.scholar.last_name and site.scholar.first_names contains trim_first %}
+            <span class="font-bold text-underline">{{author.last}}, {{author.first}}</span>
+          {% else %}
+            {{author.last}}, {{author.first}}
+          {% endif %}
+        {% else %}
+          {% unless forloop.last %}
+            {% if author.last == site.scholar.last_name and site.scholar.first_names contains trim_first %}
+              <span class="font-bold text-underline">{{author.last}}, {{author.first}}</span>,
+            {% else %}
+              {% if site.data.coauthors[author.last] %}
+                <a class="coauthor" href="{{site.data.coauthors[author.last].url}}" target="_blank">{{author.last}}, {{author.first}}</a>,
+              {% else %}
+                {{author.last}}, {{author.first}},
+              {% endif %}
+            {% endif %}
+          {% else %}
+            {% if author.last == site.scholar.last_name and site.scholar.first_names contains trim_first %}
+              and <span class="font-bold text-underline">{{author.last}}, {{author.first}}</span>
+            {% else %}
+              {% if site.data.coauthors[author.last] %}
+                and <a class="coauthor" href="{{site.data.coauthors[author.last].url}}" target="_blank">{{author.last}}, {{author.first}}</a>
+              {% else %}
+                and {{author.last}}, {{author.first}}
+              {% endif %}
+            {% endif %}
+          {% endunless %}
+        {% endif %}
+      {% endfor %}
+    </div>
+    <div class="">
+      {% if entry.type == "article" %}
+      <i class="fi-book fi-icon-color-secondary" title="Journal"></i><span class="font-italic">&nbsp;{{entry.journal}},&nbsp;{% if entry.volume %}{{ entry.volume }}{% endif %},&nbsp;{% if entry.pages %}{{ entry.pages }}{% endif %}</span>
+      {% elsif entry.type == "inproceedings" %}
+      <i class="fi-book fi-icon-color-secondary" title="Book"></i><span class="font-italic">&nbsp;In {{entry.booktitle}},&nbsp;{% if entry.volume %}{{ entry.volume }}{% endif %},&nbsp;{% if entry.pages %}{{ entry.pages }}{% endif %}</span>
+      {% endif %}
+      {% if entry.year %}
+        ({{entry.year}})
+      {% endif %}
+    </div>
+  {% endif %}
+
+  <div class="links padding-top-1 small button-group">
+<!--   {% if entry.abstract %}
+    [<a class="abstract">Abs</a>]
+  {% endif %} -->
+  {% if entry.url %}
+    <a href="{{entry.url}}" target="_blank" class="button small primary">link</a>
+  {% endif %}
+  {% if entry.arxiv %}
+    <a href="http://arxiv.org/abs/{{ entry.arxiv }}" target="_blank" class="button small primary">arXiv</a>
+  {% endif %}
+  {% if entry.html %}
+    <a href="{{ entry.html }}" target="_blank" class="button small primary">HTML</a>
+  {% endif %}
+  <!-- {% if entry.pdf %}
+    [<a href="{{ entry.pdf | prepend: '/assets/pdf/' | prepend: site.baseurl | prepend: site.url }}" target="_blank">PDF</a>]
+  {% endif %} -->
+  {% if entry.file %}
+    <a href="{{entry.file}}" target="_blank" class="button small warning">PDF</a>
+  {% endif %}
+  {% if entry.supp %}
+    <a href="{{ entry.supp | prepend: '/assets/pdf/' | prepend: site.baseurl | prepend: site.url }}" target="_blank"class="button small primary">Supp</a>]
+  {% endif %}
+  <!-- {% if entry.poster %}
+    [<a href="{{ entry.poster | prepend: '/assets/pdf/' | prepend: site.baseurl | prepend: site.url }}" target="_blank">Poster</a>]
+  {% endif %} -->
+  {% if entry.video %}
+    <a href="{{ entry.video }}" target="_blank" class="button small primary">Video</a>
+  {% endif %}
+  {% if entry.slides %}
+    <a href="{{ entry.slides | prepend: '/assets/pdf/' | prepend: site.baseurl | prepend: site.url }}" target="_blank" class="button small primary">Slides</a>
+  {% endif %}
+  {% if entry.poster %}
+    <a href="{{ entry.poster }}" target="_blank" class="button small primary">Poster</a>
+  {% endif %}
+  {% if entry.code %}
+    <a href="{{ entry.code }}" target="_blank" class="button small primary">Code</a>
+  {% endif %}
+
+  {% if entry.abstract %}
+  <div class="accordion" data-accordion data-allow-all-closed="true">
+    <div class="accordion-item" data-accordion-item>
+      <a href="#" class="button small success">Abstract</a>
+      <div class="accordion-content" data-tab-content>
+        <p>{{ entry.abstract }}</p>
+      </div>
+    </div>
+  </div>
+  {% endif %}
+
+  </div>
+
+  <span class="notes">
+    {% if entry.notes %}
+      {{entry.notes}}
+    {% endif %}
+  </span>
+
+</div>
+</div>
+</div></div>

@@ -1,0 +1,56 @@
+---
+layout: default
+---
+
+{% comment %}]
+Hero image
+{% endcomment %}
+<div class="page-hero-image" style="background: url({% if page.hero_image contains '://' %}{{ page.hero_image }}{% else %}{{ site.url }}{{ page.hero_image }}{% endif %}) no-repeat center center;">
+  <div class="grid-container">
+      <div class="grid-x grid-margin-x">
+        <div class="cell small-12 margin-top-3">
+          <div class="text-center padding-top-3 margin-top-3 font-bold">
+            <h1><span class="color-white font-wide text-underline font-bold margin-top-3">{{ page.title}}</span></h1>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+
+{% comment %}
+
+@author Akash Kumar Sharma <vyom@vyom.site></vyom>
+
+Renders the archive page for research at /research
+
+
+
+<div class="grid-container">
+    <h1 class="separator-center font-bold margin-top-2">{{ page.title }}</h1>
+</div>
+{% endcomment %}
+
+
+{% comment %}
+Research items
+{% endcomment %}
+<section class="grid-container">
+    {% for research in site.research %}
+      <div class="grid-x grid-margin-x grid-margin-y margin-top-3 padding-top-3">
+        {% comment %}
+        photo
+        {% endcomment %}
+        <div class="cell small-12 medium-4 text-center">
+          <img alt="{{ research.primary_photo }}" src="{% if research.hero_image contains '://' %}{{ research.hero_image }}{% else %}{{ site.url }}{{ research.hero_image }}{% endif %}" style="height: 200px; width: auto;">
+        </div>
+        {% comment %}
+        Information
+        {% endcomment %}
+        <div class="cell small-12 medium-8">
+          <h4 class="font-bold separator-left">{{ research.title }}</h4>
+          <p>{{ research.summary }}</p>
+          <a class="button primary rounded" href="{{ site.url }}{{ research.url | relative_url }}">Read More</a>
+        </div>
+      </div>
+    {% endfor %}
+  </section>

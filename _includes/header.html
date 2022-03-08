@@ -1,12 +1,23 @@
-<div class='header'>
-  <div class="container">
-    <div class="logo">
-      <a href="{{ site.baseurl }}"><img width="{{ site.logo.desktop_width }}" height="{{ site.logo.desktop_height }}" alt="{{ site.title }}" src="{{ site.logo.desktop | relative_url }}" /></a>
-    </div>
-    <div class="logo-mobile">
-      <a href="{{ site.baseurl }}"><img width="{{ site.logo.mobile_width }}" height="{{ site.logo.mobile_height }}" alt="{{ site.title }}" src="{{ site.logo.mobile | relative_url }}" /></a>
-    </div>
-    {% include main-menu.html %}
-    {% include hamburger.html %}
-  </div>
-</div>
+<header>
+  <nav>
+    <div class="title-bar" data-responsive-toggle="primary-nav" data-hide-for="large">
+        <button class="menu-icon" type="button" data-toggle="primary-nav"></button>
+        <h2 class="title-bar-title menu-text color-white font-wide font-bold padding-left-1"><a href="{{ site.url }}" class="color-white hover-underline"><div class="text-center"><img alt="{{ site.title }}" src="{% if site.site_logo contains '://' %}{{ site.site_logo }}{% else %}{{ site.url }}{{ site.site_logo }}{% endif %}"></div>{{ site.title }}</a></h2>
+      </div>
+      
+      <div class="top-bar" id="primary-nav">
+        <div class="top-bar-left">
+          <ul class="dropdown menu" data-dropdown-menu>
+            <li class="menu-text color-white font-bold font-wide hide-for-small-only hide-for-medium-only"><h4><a href="{{ site.url }}" class="color-white hover-underline"><img alt="{{ site.title }}" src="{% if site.site_logo contains '://' %}{{ site.site_logo }}{% else %}{{ site.url }}{{ site.site_logo }}{% endif %}" class="margin-right-1">{{ site.title }}</a></h4></li>
+          </ul>
+        </div>
+        <div class="top-bar-right">
+          <ul class="menu">
+            {% for menu_item in site.data.site_nav %}
+              <li><a href="{% if menu_item.url contains '://' %}{{ menu_item.url }}{% else %}{{ site.url }}{{ menu_item.url }}{% endif %}" class="color-white hover-underline">{{ menu_item.name | upcase }}</a></li>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+  </nav>
+</header>

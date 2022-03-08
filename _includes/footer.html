@@ -1,19 +1,114 @@
-<div class="footer">
-  <div class="container">
-    <div class="row">
-      <div class="col-12">
-        <div class="footer-inner">
-          <h2 class="footer-title">{{site.title}}</h2>
-          <ul>
-            {% assign footermenu = site.data.menus.footer | sort: 'weight'  %}
-            {% for item in footermenu %}
-            <li class="{% if item.url == page.url %}active{% endif %}">
-              <a href="{{ item.url | relative_url }}">{{ item.name }}</a>
-            </li>
-            {% endfor %}
-          </ul>
-        </div>
-      </div>
+<footer class="site-footer margin-top-3 padding-bottom-3">
+    {% comment %}
+    For mobile only
+    {% endcomment %}
+    <div class="grid-container padding-top-3 padding-bottom-3 hide-for-medium">
+            {% comment %}
+            Site branding
+            {% endcomment %}
+            <h4 class="color-white font-wide font-bold text-center margin-bottom-2"><div class="text-center"><img alt="{{ site.title }}" src="{% if site.site_logo contains '://' %}{{ site.site_logo }}{% else %}{{ site.url }}{{ site.site_logo }}{% endif %}"></div>{{ site.title }}</h4>
+            <div class="text-center">
+                <ul class="menu icon-size-lg">
+                        
+                    {% if site.github_url %}
+                        <li>
+                            <a href="{{ site.github_url }}" alt="Github" class="color-white" href="{{ site.github_url }}"><i class="fi-social-github top" data-tooltip title="Github"></i></a>
+                        </li>
+                    {% endif %}
+                    {% if site.facebook_url %}
+                        <li>
+                            <a href="{{ site.facebook_url }}" alt="Facebook" class="color-white" href="{{ site.facebook_url }}"><i class="fi-social-facebook top" data-tooltip title="Facebook"></i></a>
+                        </li>
+                    {% endif %}
+                    {% if site.twitter_url %}
+                        <li>
+                            <a href="{{ site.twitter_url }}" alt="Twitter" class="color-white" href="{{ site.twitter_url }}"><i class="fi-social-twitter top" data-tooltip title="Twitter"></i></a>
+                        </li>
+                    {% endif %}
+                    {% if site.instagram_url %}
+                        <li>
+                            <a href="{{ site.instagram_url }}" alt="Instagram" class="color-white" href="{{ site.instagram_url }}"><i class="fi-social-instagram top" data-tooltip title="Instagram"></i></a>
+                        </li>
+                    {% endif %}
+                    {% if site.youtube_url %}
+                        <li>
+                            <a href="{{ site.youtube_url }}" alt="YouTube" class="color-white" href="{{ site.youtube_url }}"><i class="fi-social-youtube top" data-tooltip title="YouTube"></i></a>
+                        </li>
+                    {% endif %}            
+                </ul>
+            </div>
+
+              {% comment %}
+            address
+            {% endcomment %}
+            <div class="text-center">
+                <p class="color-white font-italic text-underline">Contact Info </p>
+                <p class="color-white">{{ site.address_1 }}, {{ site.address_2 }}</p>
+                <p class="font-bold color-white">{{ site.address_3 }}</p>
+                <p class="lead font-bold "><a href="mailto:{{ site.email }}" class="color-white"><i class="fi-mail padding-right-1"></i>Email</a></p>
+            </div>
     </div>
-  </div>
-</div>
+    <div class="grid-container padding-top-3 padding-bottom-3 hide-for-small-only">
+        <div class="grid-x grid-margin-x grid-margin-y">
+            {% comment %}
+            Site branding
+            {% endcomment %}
+            <div class="cell small-12 medium-4">
+                <h4 class="color-white font-wide font-bold"><div class="text-center"><img alt="{{ site.title }}" src="{% if site.site_logo contains '://' %}{{ site.site_logo }}{% else %}{{ site.url }}{{ site.site_logo }}{% endif %}"></div>{{ site.title }}</h4>
+                <ul class="menu icon-size-lg">
+                    
+                    {% if site.github_url != nil %}
+                        <li>
+                            <a href="{{ site.github_url }}" alt="Github" class="color-white" href="{{ site.github_url }}"><i class="fi-social-github "title="Github"></i></a>
+                        </li>
+                    {% endif %}
+                    {% if site.facebook_url != nil %}
+                        <li>
+                            <a href="{{ site.facebook_url }}" alt="Facebook" class="color-white" href="{{ site.facebook_url }}"><i class="fi-social-facebook " title="Facebook"></i></a>
+                        </li>
+                    {% endif %}
+                    {% if site.twitter_url != nil %}
+                        <li>
+                            <a href="{{ site.twitter_url }}" alt="Twitter" class="color-white" href="{{ site.twitter_url }}"><i class="fi-social-twitter " title="Twitter"></i></a>
+                        </li>
+                    {% endif %}
+                    {% if site.instagram_url != nil %}
+                        <li>
+                            <a href="{{ site.instagram_url }}" alt="Instagram" class="color-white" href="{{ site.instagram_url }}"><i class="fi-social-instagram" title="Instagram"></i></a>
+                        </li>
+                    {% endif %}
+                    {% if site.youtube_url != nil %}
+                        <li>
+                            <a href="{{ site.youtube_url }}" alt="YouTube" class="color-white" href="{{ site.youtube_url }}"><i class="fi-social-youtube" title="YouTube"></i></a>
+                        </li>
+                    {% endif %}
+                    {% if site.email != nil %}
+                        <li>
+                            <a href="mailto:{{ site.email }}" class="color-white" alt="Email"><i class="fi-mail padding-right-1"></i></a>
+                        </li>    
+                    {% endif %}       
+                </ul>
+            </div>
+              {% comment %}
+            address
+            {% endcomment %}
+            <div class="cell small-12 medium-8">
+                {% comment %}
+                Address
+                {% endcomment %}
+                <div class="text-right">
+                    <p class="color-white font-italic text-underline">Contact Info </p>
+                    <p class="color-white">{{ site.address_1 }}, {{ site.address_2 }}</p>
+                    <p class="font-bold color-white">{{ site.address_3 }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr class="color-white"/>
+    <div class="grid-container color-white padding-top-2 margin-botom-2 text-center">&copy; {{ "now" | date: "%Y" }} | {{ site.title }} | All rights reserved</div>
+</footer>
+
+<script src="{{ site.url }}{{ '/assets/js/jquery.min.js' | relative_url }}"></script>
+<script src="{{ site.url }}{{ '/assets/js/what-input.min.js' | relative_url }}"></script>
+<script src="{{ site.url }}{{ '/assets/foundation/dist/assets/js/app.js' | relative_url }}"></script>
+<script src="{{ site.url }}{{ '/assets/js/app.js' | relative_url }}"></script>

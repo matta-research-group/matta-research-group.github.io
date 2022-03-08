@@ -1,0 +1,54 @@
+---
+layout: default
+---
+
+<div class="grid-container">
+    <h1 class="separator-center font-bold margin-top-3">{{ page.title }}</h1>
+    <p class="text-center lead">{{ page.content }}</p>
+</div>
+
+{% if page.hero_image %}
+  <div class="grid-container text-center">
+    <img src="{% if page.hero_image contains '://' %}{{ page.hero_image }}{% else %}{{ site.url }}{{ page.hero_image }}{% endif %}" alt="{{ page.title }}" class="img-responsive border shadow" style="max-height: 500px; width: auto;">
+  </div>
+{% endif %}
+
+{% comment %}
+Team members
+{% endcomment %}
+<section class="grid-container">
+  {% for member in site.team %}
+    <div class="grid-x grid-margin-x grid-margin-y margin-top-3 padding-top-3">
+      {% comment %}
+      photo
+      {% endcomment %}
+      <div class="cell small-12 medium-4 text-center">
+        <img alt="{{ member.name }}" src="{% if member.photo contains '://' %}{{ member.photo }}{% else %}{{ site.url }}{{ member.photo }}{% endif %}" class="rounded bordered shadow" style="height: 200px; width: auto;">
+      </div>
+      {% comment %}
+      Information
+      {% endcomment %}
+      <div class="cell small-12 medium-8">
+        <h4 class="font-bold">{{ member.name }}</h4>
+        <p class="font-italic">{{ member.designation }}</p>
+        {% if member.twitter %}
+          <span class="top" data-tooltip title="Twitter">
+            <a href="https://twitter.com/{{ member.twitter }}"><i class="fi-social-twitter margin-right-1"></i></a>
+          </span>
+        {% endif %}
+        {% if member.email %}
+          <span class="top" data-tooltip title="Email">
+            <a href="mailto:{{ member.email }}"><i class="fi-mail margin-right-1"></i></a>
+          </span>
+        {% endif %}
+        {% if member.website %}
+          <span class="top" data-tooltip title="Website">
+            <a href="{{ member.website }}"><i class="fi-web margin-right-1"></i></a>
+          </span>
+        {% endif %}
+        <p class="separator-left"></p>
+        <p>{{ member.content }}</p>
+      </div>
+    </div>
+  {% endfor %}
+</section>

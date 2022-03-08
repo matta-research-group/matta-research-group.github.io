@@ -1,68 +1,213 @@
 ---
 layout: default
-bodyClass: "page-home"
 ---
-
-<div class="intro">
-  <div class="container">
-    <div class="row justify-content-start">
-      <div class="col-12 col-md-7 col-lg-6 order-2 order-md-1">
-        {{ content }}
-        {% if page.show_call_box %}
-          {% include call.html show_button=true %}
-        {% endif %}
+{% comment %}]
+Hero image
+{% endcomment %}
+<div class="page-hero-image" style="background: url({% if page.hero_image contains '://' %}{{ page.hero_image }}{% else %}{{ site.url }}{{ page.hero_image }}{% endif %}) no-repeat center center;">
+  <div class="grid-container">
+    <div class="grid-x grid-margin-x">
+      <div class="cell small-12 margin-top-3">
+        <div class="text-center padding-top-3 margin-top-3 font-bold">
+          <h1><span class="color-white font-wide font-bold">{{ page.hero_title}}</span></h1>
+          <a href="/research" class="button primary rounded margin-top-2">Our Research</a>
+        </div>
       </div>
-      {% if page.intro_image %}
-      <div class="col-12 col-md-5 col-lg-6 order-1 order-md-2 position-relative">
-        <img alt="{{ page.title }}" class="intro-image{% if page.intro_image_absolute %} intro-image-absolute{% endif %}{% if page.intro_image_hide_on_mobile %} intro-image-hide-mobile{% endif %}" src="{{ page.intro_image | relURL }}" />
-      </div>
-      {% endif %}
     </div>
   </div>
 </div>
 
-<div class="strip">
-  <div class="container pt-6 pb-6 pb-md-10">
-    <div class="row justify-content-start">
-      {% for service in site.services %}
-      <div class="col-12 col-md-4 mb-1">
-        <div class="service service-summary">
-          <div class="service-content">
-            <h2 class="service-title">
-              <a href="{{ service.url | relative_url }}">{{ service.title }}</a>
-            </h2>
-            <p>{{ service.content | markdownify | strip_html | truncate: 100 }}</p>
+{% comment %}
+intro text
+{% endcomment %}
+<div class="home-intro margin-top-3 margin-bottom-3">
+  <div class="grid-container"><h5 class="text-center">{{ page.intro }}</h5></div>
+</div>
+
+{% comment %}
+Carousel
+
+<div class="home-intro-carousel grid-container">
+  <div class="orbit" role="region" aria-label="Favorite Space Pictures" data-orbit>
+    <div class="orbit-wrapper">
+      <div class="orbit-controls">
+        <button class="orbit-previous"><span class="show-for-sr">Previous Slide</span>&#9664;&#xFE0E;</button>
+        <button class="orbit-next"><span class="show-for-sr">Next Slide</span>&#9654;&#xFE0E;</button>
+      </div>
+      <ul class="orbit-container text-center">
+        <li class="is-active orbit-slide">
+          <figure class="orbit-figure">
+            <img class="orbit-image" src="https://picsum.photos/100" alt="Space">
+            <figcaption class="orbit-caption">Space, the final frontier.</figcaption>
+          </figure>
+        </li>
+        <li class="orbit-slide">
+          <figure class="orbit-figure">
+            <img class="orbit-image" src="https://picsum.photos/101" alt="Space">
+            <figcaption class="orbit-caption">Lets Rocket!</figcaption>
+          </figure>
+        </li>
+        <li class="orbit-slide">
+          <figure class="orbit-figure">
+            <img class="orbit-image" src="https://picsum.photos/102" alt="Space">
+            <figcaption class="orbit-caption">Encapsulating</figcaption>
+          </figure>
+        </li>
+        <li class="orbit-slide">
+          <figure class="orbit-figure">
+            <img class="orbit-image" src="https://picsum.photos/103" alt="Space">
+            <figcaption class="orbit-caption">Outta This World</figcaption>
+          </figure>
+        </li>
+      </ul>
+    </div>
+    <nav class="orbit-bullets">
+      <button class="is-active" data-slide="0">
+        <span class="show-for-sr">First slide details.</span>
+        <span class="show-for-sr" data-slide-active-label>Current Slide</span>
+      </button>
+      <button data-slide="1"><span class="show-for-sr">Second slide details.</span></button>
+      <button data-slide="2"><span class="show-for-sr">Third slide details.</span></button>
+      <button data-slide="3"><span class="show-for-sr">Fourth slide details.</span></button>
+    </nav>
+  </div>
+</div>
+{% endcomment %}
+
+{% comment %}
+More information about the group
+{% endcomment %}
+<div class="home-more-info margin-top-3 margin-bottom-3">
+  <div class="grid-container">
+    <div class="grid-x grid-margin-x grid-margin-y">
+      <div class="cell small-12 medium-4">
+        <img class="img-responsive" alt="image" src="{{ page.more_info_image }}">
+      </div>
+      <div class="lead cell small-12 medium-8">
+        {{ page.more_info }}
+      </div>
+    </div>
+
+  </div>
+</div>
+
+{% comment %}
+Research
+{% endcomment %}
+<div class="home-more-info margin-top-3 margin-bottom-3">
+  <div class="grid-container">
+    <div class="grid-x grid-margin-x grid-margin-y">
+      <div class="lead cell small-12 medium-6">
+        <h3 class="separator-left font-bold">Our Research</h3>
+        {{ page.research_text }}
+        <div class="margin-top-2"><a class="button primary rounded" href="/research">Research</a></div>
+      </div>
+      <div class="cell small-12 medium-6">
+        <img class="img-responsive" alt="image" src="{% if page.research_image contains '://' %}{{ page.research_image }}{% else %}{{ site.url }}{{ page.research_image }}{% endif %}">
+      </div>
+    </div>
+  </div>
+</div>
+
+{% comment %}
+Research
+{% endcomment %}
+<div class="home-more-info margin-top-3 margin-bottom-3 hide-for-small-only">
+  <div class="grid-container">
+    <div class="grid-x grid-margin-x grid-margin-y">
+      <div class="cell small-12 medium-6">
+        <img class="img-responsive" alt="image" src="{{ page.publications_image }}">
+      </div>
+      <div class="lead cell small-12 medium-6">
+        <h3 class="separator-right font-bold">Publications</h3>
+        <div class="text-right">{{ page.publications_text }}</div>
+        <div class="margin-top-2 text-right"><a class="button primary rounded" href="/publications">Know more</a></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="home-more-info margin-top-3 margin-bottom-3 hide-for-medium">
+  <div class="grid-container">
+    <div class="grid-x grid-margin-x grid-margin-y">
+      <div class="lead cell small-12 medium-6">
+        <h3 class="separator-left font-bold">Publications</h3>
+        <div class="">{{ page.publications_text }}</div>
+        <div class="margin-top-2"><a class="button primary rounded" href="/publications">Know more</a></div>
+      </div>
+      <div class="cell small-12 medium-6">
+        <img class="img-responsive" alt="image" src="{{ page.publications_image }}">
+      </div>
+    </div>
+  </div>
+</div>
+
+{% comment %}
+Funding
+{% endcomment %}
+<div class="grid-container homepage-funding margin-bottom-3 margin-top-3">
+  <h3 class="separator-center font-bold margin-bottom-3">{{ page.funding_section_title }}</h3>
+  <div class="grid-x grid-margin-x grid-margin-y small-up-2 medium-up-3">
+    {% for funding_image in site.data.homepage.funding_section_images %}
+    <div class="cell text-center">
+      <img alt="{{ funding_image.name }}" src="{% if funding_image.url contains '://' %}{{ funding_image.url }}{% else %}{{ site.url }}{{ funding_image.url }}{% endif %}" title="{{ funding_image.name }}">
+    </div>
+    {% endfor %}
+  </div>
+</div>
+
+{% comment %}
+News and Twitter
+{% endcomment %}
+<div class="grid-container">
+  <div class="grid-x grid-margin-x grid-margin-y">
+    {% comment %}
+    News
+    {% endcomment %}
+    <div class="cell small-12 medium-6">
+      <h3 class="separator-left font-bold margin-bottom-2">{{ page.news_section_title }}</h3>
+      {% for news in site.news %}
+        <div class="grid-x grid-margin-x grid-margin-y">
+          {% if news.hero_image != "" %}
+            <div class="cell small-12 medium-4">
+              <img alt="{{ news.title }}" src="{% if news.hero_image contains '://' %}{{ news.hero_image }}{% else %}{{ site.url }}{{ news.hero_image }}{% endif %}"title="{{ news.title }}" class="thumbnail">
+            </div>
+          {% endif %}
+          {% comment %}
+          News
+          {% endcomment %}
+          {% if news.hero_image != "" %}
+            <div class="cell small-12 medium-8">
+          {% else %}
+            <div class="cell small-12">
+          {% endif %}
+            <p>{{ news.excerpt }}</p>
+            <div>
+              <a href="{{ news.url }}" class="button primary rounded">Read More</a>
+            </div>
+            <div class="clearfix">
+                <div class="float-left color-secondary">{{ news.date | date: "%b %d, %Y" }}</span></div>
+            </div>
           </div>
         </div>
-      </div>
-      {% endfor %}
+        <hr/>
+    {% endfor %}
     </div>
-    <div class="row justify-content-center">
-      <div class="col-auto">
-        <a class="button button-primary" href="{{ "services" | relative_url }}">View All Services</a>
+    {% comment %}
+    Twitter
+    {% endcomment %}
+    <div class="cell small-12 medium-6 text-center">
+      {% comment %}
+      Follow button
+      {% endcomment %}
+      <a href="https://twitter.com/micaelamatta?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @MicaelaMatta</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+      {% comment %}
+      Twitter Timeline
+      {% endcomment %}
+      <div class='jekyll-twitter-plugin' align="">
+        {% twitter https://twitter.com/micaelamatta limit=2 %}
       </div>
-    </div>
-  </div>
-</div>
-
-{% if site.data.features %}
-<div class="strip strip-grey">
-  <div class="container pt-6 pb-6 pt-md-10 pb-md-10">
-    <div class="row justify-content-center">
-
-      {% for feature in site.data.features %}
-      <div class="col-12 col-md-6 col-lg-4 mb-2">
-        <div class="feature">
-          {% if feature.image %}
-          <div class="feature-image"><img alt="{{ feature.title }} logo" src="{{ feature.image.url | relative_url }}" width="{{ feature.image.width }}" height="{{ feature.image.height }}" /></div>
-          {% endif %}
-          <h2 class="feature-title">{{ feature.title }}</h2>
-          <div class="feature-content">{{ feature.description }}</div>
-        </div>
-      </div>
-      {% endfor %}
-
     </div>
   </div>
+
 </div>
-{% endif %}

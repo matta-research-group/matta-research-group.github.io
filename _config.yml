@@ -1,94 +1,88 @@
-url: https://matta-research-group.github.io # the base hostname & protocol for your site
-baseurl:  # the subpath of your site, e.g. /blog/
-permalink: pretty
-title: 'Matta Research Group'
+title: Matta Research Group
+email: micaela.matta@kcl.ac.uk
+description: >- # this means to ignore newlines until "baseurl:"
+  Description for the site
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://localhost:4000" # the base hostname & protocol for your site, e.g. http://example.com
+JEKYLL_ENV: "development"
+address_1: "Britannia House"
+address_2: "King's College London, Chemistry Department"
+address_3: "7 Trinity St, London SE1 1DB"
+site_logo: "http://via.placeholder.com/80x40" # Site logo
+github_url: "https://github.com/matta-research-group/"
+facebook_url: 
+instagram_url: 
+youtube_url: 
+twitter_url: "https://twitter.com/micaelamatta"
 
-logo:
-  mobile: "images/logo/logo-mobile.svg"
-  mobile_height: "32px"
-  mobile_width: "32px"
-  desktop: "images/logo/logo.svg"
-  desktop_height: "32px"
-  desktop_width: "120px"
+# For jekyll-scholar plugin for Bibtex
 
 collections:
-  services:
-    output: true
   team:
+    output: false
+  research:
     output: true
-
-defaults:
-  - scope:
-      path: ""
-      type: "services"
-    values:
-      layout: "service"
-  - scope:
-      path: ""
-      type: "team"
-    values:
-      layout: "team"
-sass:
-  indentWidth: 4
-  style: compressed # possible values: nested expanded compact compressed
-  precision: 10
-
-plugins:
-  - jekyll-environment-variables
-  - jekyll-archives
-  - jekyll-diagrams
-  - jekyll-email-protect
-  - jekyll-feed
-  - jekyll-github-metadata
-  - jekyll-imagemagick
-  - jekyll-paginate-v2
-  - jekyll/scholar
-  - jekyll-sitemap
-  - jekyll-target-blank
-  - jekyll-twitter-plugin
-  - jemoji
-  
-exclude:
-  - Gemfile
-  - Gemfile.lock
-  - node_modules
-  - vendor/bundle/
-  - vendor/cache/
-  - vendor/gems/
-  - vendor/ruby/
-  - LICENSE.md
-  - LICENSE
-  - README.md
-
-theme: jekyll-theme-cayman
-
-
-
-# -----------------------------------------------------------------------------
-# Jekyll Scholar
-# -----------------------------------------------------------------------------
+  news:
+    output: true
+    
 
 scholar:
 
   last_name: Matta
-  first_name: [Micaela]
+  first_names: [Micaela, "M"]
 
   style: apa
   locale: en
 
+  sort_by: year
+  order: descending
+
   source: /_bibliography/
   bibliography: biblio.bib
-  bibliography_template: bib
-  # Note: if you have latex math in your bibtex, the latex filter
-  # preprocessing may conflict with MathJAX if the latter is enabled.
-  # See https://github.com/alshedivat/al-folio/issues/357.
-  bibtex_filters: [latex, smallcaps, superscript]
+  bibliography_template: biblio
 
   replace_strings: true
   join_strings: true
 
-  details_dir: bibliography
-  details_layout: bibliography.html
-  details_link: Details
+  #details_dir: bibliography
+  #details_layout: bibtex.html
+  #details_link: Bibtex
 
   query: "@*"
+
+
+# Exclude from processing
+exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - vendor/
+  - assets/foundation/node_modules/
+  - assets/foundation/src/
+  - assets/foundation/.babelrc
+  - assets/foundation/.gitignore
+  - assets/foundation/config.yml
+  - assets/foundation/gulpfile.babel.js
+  - assets/foundation/package.json
+  - assets/foundation/readme.md
+  - assets/foundation/yarn.lock
+
+defaults:
+  - scope:
+      path: ""
+      type: "research"
+    values:
+      layout: "single/research"
+  - scope:
+      path: ""
+      type: "news"
+    values:
+      layout: "single/news"
+  
