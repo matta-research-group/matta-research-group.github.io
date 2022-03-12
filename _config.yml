@@ -3,7 +3,7 @@ email: micaela.matta@kcl.ac.uk
 description: >- # this means to ignore newlines until "baseurl:"
   Description for the site
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://localhost:4000" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://flamboyant-darwin-3ada19.netlify.app" # the base hostname & protocol for your site, e.g. http://example.com
 JEKYLL_ENV: "production"
 address_1: "Britannia House"
 address_2: "King's College London, Chemistry Department"
