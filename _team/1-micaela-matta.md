@@ -9,4 +9,4 @@ website: https://micaelamatta.com
 
 Micaela obtained her Msc and PhD at the University of Bologna in 2015, and held postdoctoral appointments at the University of Bordeaux and Northwestern University.
 
-In 2019, she joined the University of Liverpool as the awardee of a Royal Society Newton International Fellowship (2019-2020) and a Marie Curie Individual Fellowship (2020-2022). She started her research group at King’s Chemistry in April 2022.
+In 2019, she joined the University of Liverpool as the awardee of a Royal Society Newton International Fellowship and a Marie Curie Individual Fellowship. She started her research group at King’s Chemistry in April 2022.
