@@ -13,7 +13,7 @@ hero_image: "/assets/images/teaching/teaching-hero-image.jpg"
 
 This free hybrid [workshop](https://www.ccpbiosim.ac.uk/events/eventdetail/138/-/8th-annual-ccpbiosim-conference-frontiers-in-biomolecular-simulation-2022) will take place June 9-10 in Edinburgh and online, immediately following the 8th CCPBioSim Conference.
 
-### MDAnalysis workshops
+### Past MDAnalysis workshops
 
 - [2021 online workshop sponsored by PRACE/Surf](https://github.com/MDAnalysis/WorkshopPrace2021)
 
