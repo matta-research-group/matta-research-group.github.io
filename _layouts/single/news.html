@@ -8,5 +8,5 @@ layout: default
     <img alt="{{ page.title }}" src="{% if page.hero_image contains '://' %}{{ page.hero_image }}{% else %}{{ site.url }}{{ page.hero_image }}{% endif %}" class="bordered shadow">
 </div>
 <div class="grid-container">
-    <p class="text-center lead">{{ page.content }}</p>
+    <p class="text-center lead">{{ content }}</p>
 </div>
