@@ -1,6 +1,6 @@
 ---
 name: Sehrish Mahmood
-designation: 
+designation: MRes student
 photo: 
 twitter: 
 email: 
