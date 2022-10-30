@@ -10,7 +10,7 @@
   url: "/team"
 - name: Join
   url: "/join"
-- name: Outreach
-  url: "/outreach"
+- name: Resources
+  url: "/resources"
 - name: Contact
   url: "/contact"
