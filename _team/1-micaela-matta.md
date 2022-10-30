@@ -1,10 +1,9 @@
 ---
 name: Micaela Matta
 designation: Lecturer in Computational Materials Chemistry
-photo: /assets/images/team/micaela-matta.jpg
+photo: /assets/images/team/ACS_highrez-4916.jpg
 twitter: micaelamatta
 email: micaela.matta@kcl.ac.uk
-website: https://micaelamatta.com
 ---
 
 Micaela obtained her Msc and PhD at the University of Bologna in 2015, and held postdoctoral appointments at the University of Bordeaux and Northwestern University.
