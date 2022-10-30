@@ -2,7 +2,7 @@
 title: Join
 layout: page/join
 description: Join
-hero_image: "/assets/images/join/join-page-image.jpg"
+hero_image: ""
 ---
 
 <div>
@@ -35,3 +35,5 @@ We currently don't have openings, but there are multiple fellowship schemes that
 - Leverhulme Early Career Fellowship
 
 <h4 class="margin-top-2 margin-bottom-1 font-bold">Lab Culture</h4>
+
+<src img="assets/images/join/join-page-image.jpg">
