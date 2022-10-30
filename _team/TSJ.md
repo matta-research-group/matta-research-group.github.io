@@ -1,6 +1,6 @@
 ---
 name: Tristan Stephens-Jones
-designation: 
+designation: PhD student
 photo: 
 twitter: 
 email: 
