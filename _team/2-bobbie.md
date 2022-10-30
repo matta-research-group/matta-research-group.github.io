@@ -1,6 +1,6 @@
 ---
 name: Bobbie
-designation: Sniff Researcher
+designation: PostDog 
 photo: /assets/images/team/bobbie.jpg
 ---
 
