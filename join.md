@@ -8,9 +8,10 @@ hero_image:
 <div>
 <h4 class="margin-top-2 margin-bottom-1 font-bold">iCASE LIDo PhD </h4>
 
+<p>
+  We have a 4 year iCASE PhD studentship cofunded by Janssen Johnson & Johnson to work on software development for polymer simulations. See the ad on the LIDo DTP website or <a href="mailto:micaela.matta@kcl.ac.uk">get in touch</a> for more details.
+</p>
 
-We have a 4 year iCASE PhD studentship cofunded by Janssen Johnson & Johnson to work on software development for polymer simulations. See the ad on the LIDo DTP website or [get in touch](mailto:micaela.matta@kcl.ac.uk) for more details.
-  
 
 <a class="button primary rounded" href="https://www.lido-dtp.ac.uk/apply/apply-icase-studentship/software-toolkits-silico-screening-polymer-excipients-drug" target="_blank">PhD position</a></div>
 
