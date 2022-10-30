@@ -1,6 +1,6 @@
 ---
 name: Hongding Zhang
-designation: 
+designation: MSci student
 photo: 
 twitter: 
 email: 
