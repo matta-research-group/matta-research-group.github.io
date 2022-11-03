@@ -2,7 +2,7 @@
 title: Research
 layout: archive/research
 description: Research
-hero_image: "/assets/images/home/taylor-vick-M5tzZtFCOfs-unsplash.jpg"
+hero_image:
 ---
 
-Research projects currently active in the group and collaborations
+TBA - Research projects currently active in the group and collaborations
