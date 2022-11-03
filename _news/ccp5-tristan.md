@@ -1,5 +1,5 @@
 ---
-date: "2022-30-09"
+date: "2022-09-30"
 location: "King's College London"
 hero_image: ""
 ---
