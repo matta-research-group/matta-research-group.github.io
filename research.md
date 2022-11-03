@@ -1,6 +1,6 @@
 ---
 title: Research
-layout: archive/research
+layout: single/research
 description: Research
 hero_image:
 ---
