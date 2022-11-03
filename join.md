@@ -40,4 +40,6 @@ We currently don't have openings, but there are multiple fellowship schemes that
 
 <h4 class="margin-top-2 margin-bottom-1 font-bold">Lab Culture</h4>
 
-<src img="assets/images/join/join-page-image.jpg">
+<img src="assets/images/join/join-page-image.jpg">
+
+
