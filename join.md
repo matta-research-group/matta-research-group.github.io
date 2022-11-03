@@ -40,6 +40,5 @@ We currently don't have openings, but there are multiple fellowship schemes that
 
 <h4 class="margin-top-2 margin-bottom-1 font-bold">Lab Culture</h4>
 
-<img src="assets/images/join/join-page-image.jpg">
-
+We value the participation of every member of our community and want to ensure everyone has an enjoyable and fulfilling experience, both professionally and personally. All group members are expected to show respect and courtesy to others at all times. We create our culture and our culture is inclusive. Every group member is require to abide to our Code of Conduct.
 
