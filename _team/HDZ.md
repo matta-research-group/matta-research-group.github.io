@@ -1,7 +1,7 @@
 ---
 name: Hongding Zhang
 designation: MSci student
-photo: assets/images/team/IMG_6736.PNG
+photo: /assets/images/team/IMG_6736.PNG
 twitter: 
 email: 
 website:
