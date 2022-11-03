@@ -1,8 +1,8 @@
 ---
 title: Resources
-layout: page/resources
+layout: page
 description: Group Resources
-hero_image:
+hero_image: ""
 ---
 
 password protected links and resources for current group members
