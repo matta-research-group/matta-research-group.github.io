@@ -1,5 +1,5 @@
 ---
-date: "2022-07-10"
+date: "2022-10-07"
 location: "Telluride"
 hero_image: "/assets/images/telluride.jpg"
 ---
