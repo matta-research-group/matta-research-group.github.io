@@ -1,6 +1,6 @@
 ---
-date: "2021-06-23"
+date: "2022-11-17"
 location: "online"
 ---
 
-I am giving a seminar (online) at Washington University in St. Louis, Department of Chemistry
+Micaela is giving a seminar (online) at the University of Delaware (host: Prof. Laure Kayser)
