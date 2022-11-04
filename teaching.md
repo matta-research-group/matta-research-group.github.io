@@ -7,15 +7,13 @@ hero_image: "/assets/images/teaching/teaching-hero-image.jpg"
 
 ### MRes in interdisciplinary chemistry
 
-- Oct 2022 Computational methods materials can be downloaded here
+- 7CCC0002 Research methods in experimental and computational chemistry [KEATS page](https://keats.kcl.ac.uk/course/view.php?id=103486)
 
-- Oct 2022 Presentation on "Open access, open data, open software, open science" can be downloaded here
+- Presentation on "Open access, open data, open software, open science" [on GitHub](https://github.com/matta-research-group/openaccess)
 
-### Advanced topics in physical and computational chemistry
+### 3rd year Chemistry degree
 
-- 2022/2023 module materials will be linked here soon!
-
-- 2021/2022 module materials can be found on [KEATS](https://keats.kcl.ac.uk/course/view.php?id=93486)
+- 6CCC0030 Advanced topics in physical chemistry and computational chemistry [KEATS page](https://keats.kcl.ac.uk/course/view.php?id=93486)
 
 
 ### Past MDAnalysis workshops
