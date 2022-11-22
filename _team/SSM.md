@@ -1,7 +1,7 @@
 ---
 name: Sehrish Mahmood
 designation: MRes student
-photo: https://icons8.com/icon/CHobBds7pfd9/human
+photo: /assets/images/team/SSM.png
 twitter: 
 email: 
 website:
