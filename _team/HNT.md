@@ -1,7 +1,7 @@
 ---
 name: Hannah Turney
 designation: PhD Student
-photo: /assets/images/team/Hannah Turney.jpeg
+photo: /assets/images/team/Hannah Turney.jpg
 twitter: 
 email: hannah.turney@kcl.ac.uk
 website:
