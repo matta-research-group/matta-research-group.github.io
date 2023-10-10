@@ -70,21 +70,6 @@ Former Team Members
       <div class="cell small-12 medium-8">
         <h4 class="font-bold">{{ former_member.name }}</h4>
         <p class="font-italic">{{ former_member.designation }}</p>
-        {% if former_member.twitter %}
-          <span class="top" data-tooltip title="Twitter">
-            <a href="https://twitter.com/{{ former_member.twitter }}"><i class="fi-social-twitter margin-right-1"></i></a>
-          </span>
-        {% endif %}
-        {% if former_member.email %}
-          <span class="top" data-tooltip title="Email">
-            <a href="mailto:{{ former_member.email }}"><i class="fi-mail margin-right-1"></i></a>
-          </span>
-        {% endif %}
-        {% if former_member.website %}
-          <span class="top" data-tooltip title="Website">
-            <a href="{{ former_member.website }}"><i class="fi-web margin-right-1"></i></a>
-          </span>
-        {% endif %}
         <p class="separator-left"></p>
         <p>{{ former_member.content }}</p>
       </div>
