@@ -1,6 +1,6 @@
 ---
 title: Resources
-layout: page
+layout: page/resources
 description: Group Resources
 hero_image: ""
 ---
