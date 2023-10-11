@@ -8,6 +8,16 @@ hero_image: ""
 Links and resources for group members (and whoever may find these useful):
 
 
+#### Cheat Sheets
+
+- [GitHub Cheat Sheet](https://education.github.com/git-cheat-sheet-education.pdf)
+- [SLURM Cheat Sheet](https://bioinformaticsworkbook.org/Appendix/HPC/SLURM/slurm-cheatsheat.html#gsc.tab=0)
+- [SLURM Commands](https://curc.readthedocs.io/en/latest/running-jobs/slurm-commands.html)
+- [Vi Cheat Sheet](https://www.atmos.albany.edu/daes/atmclasses/atm350/vi_cheat_sheet.pdf)
+- [Jupyter Notebook Cheat Sheet](https://www.edureka.co/blog/wp-content/uploads/2018/10/Jupyter_Notebook_CheatSheet_Edureka.pdf)
+- [How to use Rsync](https://www.digitalocean.com/community/tutorials/how-to-use-rsync-to-sync-local-and-remote-directories)
+- [File Permissions Explained](https://linuxcommand.org/lc3_lts0090.php)
+
 #### Learning Computational Chemistry
 
 - [CCPBioSim](http://www.ccpbiosim.ac.uk) and [CCP5](https://www.ccp5.ac.uk) organise frequent workshops and summer schools
@@ -41,28 +51,12 @@ Links and resources for group members (and whoever may find these useful):
 - [How to write a scientific article](https://www.sciencedirect.com/science/article/pii/S1878764915001606)
 
 
-#### Cheat Sheets
-- [GitHub Cheat Sheet](https://education.github.com/git-cheat-sheet-education.pdf)
-
-- [SLURM Cheat Sheet](https://bioinformaticsworkbook.org/Appendix/HPC/SLURM/slurm-cheatsheat.html#gsc.tab=0)
-
-- [SLURM Commands](https://curc.readthedocs.io/en/latest/running-jobs/slurm-commands.html)
-
-- [Vi Cheat Sheet](https://www.atmos.albany.edu/daes/atmclasses/atm350/vi_cheat_sheet.pdf)
-
-- [Jupyter Notebook Cheat Sheet](https://www.edureka.co/blog/wp-content/uploads/2018/10/Jupyter_Notebook_CheatSheet_Edureka.pdf)
-
-- [How to use Rsync](https://www.digitalocean.com/community/tutorials/how-to-use-rsync-to-sync-local-and-remote-directories)
-
-- [File Permissions Explained](https://linuxcommand.org/lc3_lts0090.php)
-
-
-#### Software development
+#### Software Development
 
 - [Publishing Python packages](https://pypackages.com/)
 - [Python data science book](https://cocalc.com/share/public_paths/8b892baf91f98d0cf6172b872c8ad6694d0f7204/notebooks)
 
-#### Career Development
+#### Career Development 
 
 - [Building and sustaining mentorship as a mentee](https://febs.onlinelibrary.wiley.com/doi/full/10.1111/febs.15823)
 - [Angela Duckworth’s grit scale](https://angeladuckworth.com/grit-scale/)
