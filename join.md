@@ -20,14 +20,29 @@ hero_image:
 
 <h4 class="margin-top-2 margin-bottom-1 font-bold">Postdoc opportunities</h4>
 
-We currently don't have openings, but there are multiple fellowship schemes that fund postdocs in the UK. Candidates who are interested in applying for a postdoctoral fellowship are welcome to [get in touch](mailto:micaela.matta@kcl.ac.uk).
+### Postdoc opening 
+
+We have an opening for a 3-year EPSRC-funded postdoc to work on high-throughput screening and optimisation of mixed ionic/electronic conductors. 
+
+The position is funded by the EPSRC project “Data-driven design of organic mixed conductors”.  
+In this project, the candidate will conduct a high throughput computational screening of novel organic mixed ionic/electronic conductors leveraging cheminformatics, quantum chemistry, and molecular dynamics simulations. The candidate will work in close collaboration with experimental groups providing validation/testing of novel mixed conducting materials.
+The project has a strong emphasis on software development; the candidate will develop and maintain workflows and datasets related to the project according to FAIR principles. 
+
+For further information, please [reach out to Dr Micaela Matta](mailto:micaela.matta@kcl.ac.uk).
+
+
+### Fellowships
+
+There are multiple fellowship schemes that fund postdocs in the UK. Candidates who are interested in applying for a postdoctoral fellowship are welcome to [get in touch](mailto:micaela.matta@kcl.ac.uk).
 
 - [Marie Curie Fellowship](https://marie-sklodowska-curie-actions.ec.europa.eu)
 - [Royal Society Newton International Fellowship](https://royalsociety.org/grants-schemes-awards/grants/newton-international/)
 - [EPSRC Postdoctoral Fellowship](https://www.ukri.org/opportunity/epsrc-postdoctoral-fellowship/)
 - [Leverhulme Early Career Fellowship](https://www.leverhulme.ac.uk/early-career-fellowships) 
 
+
+
 <h4 class="margin-top-2 margin-bottom-1 font-bold">Lab Culture</h4>
 
-We value the participation of every member of our community and want to ensure everyone has an enjoyable and fulfilling experience, both professionally and personally. All group members are expected to show respect and courtesy to others at all times. We create our culture and our culture is inclusive. Every group member is require to abide to our Code of Conduct.
+We value the participation of every member of our community and want to ensure everyone has an enjoyable and fulfilling experience, both professionally and personally. All group members are expected to show respect and courtesy to others at all times. We create our culture and our culture is inclusive. Every group member is required to abide to our Code of Conduct.
 
