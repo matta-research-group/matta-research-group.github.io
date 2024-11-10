@@ -1,12 +1,14 @@
 - name: King's College London
   url: "/assets/images/home/kings-college-london.jpg"
+- name: cropped-CCP5_Logo.png
+  url: "/assets/images/home/CCP5.png"
 - name: The Royal Society
   url: "/assets/images/home/royal-society.jpg"
 - name: Marie Curie Actions
   url: "/assets/images/home/marie-curie-actions.jpg"
 - name: BBSRC
   url: "/assets/images/home/BBSRC.png"
-- name: EPSRC
-  url: "/assets/images/home/EPSRC.png"
 - name: LIDO
   url: "/assets/images/home/LIDO.png"
+  - name: EPSRC
+  url: "/assets/images/home/EPSRC.png"
