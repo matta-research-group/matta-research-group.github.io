@@ -1,7 +1,9 @@
 - name: King's College London
-  url: "/assets/images/home/KCL_logo.svg"
+  url: "/assets/images/home/KCL.png"
 - name: CCP5
   url: "/assets/images/home/cropped-CCP5_Logo.png"
+- name: China Scholarship Council
+  url: "/assets/images/home/CSC.jpg"
 - name: The Royal Society
   url: "/assets/images/home/RoyalSociety.jpg"
 - name: Marie Curie Actions
