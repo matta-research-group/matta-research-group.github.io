@@ -2,11 +2,14 @@
 title: Resources
 layout: page/resources
 description: Group Resources
-hero_image: ""
 ---
 
 Links and resources for group members (and whoever may find these useful):
 
+#### Group Manual and Code of Conduct
+
+- [Group Manual](group-manual.md)
+- [Code of Conduct](COC.md)
 
 #### Cheat Sheets
 
