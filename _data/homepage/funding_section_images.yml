@@ -1,11 +1,11 @@
 - name: King's College London
-  url: "/assets/images/home/kings-college-london.jpg"
+  url: "/assets/images/home/KCL_logo.svg"
 - name: CCP5
-  url: "/assets/images/home/cropped-CCP5_Logo.png"
+  url: "/assets/images/cropped-CCP5_Logo.png"
 - name: The Royal Society
-  url: "/assets/images/home/royal-society.jpg"
+  url: "/assets/images/home/RoyalSociety.jpg"
 - name: Marie Curie Actions
-  url: "/assets/images/home/marie-curie-actions.jpg"
+  url: "/assets/images/home/msca.png"
 - name: BBSRC
   url: "/assets/images/home/BBSRC.png"
 - name: LIDO
