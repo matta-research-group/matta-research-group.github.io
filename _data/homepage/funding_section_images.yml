@@ -4,3 +4,9 @@
   url: "/assets/images/home/royal-society.jpg"
 - name: Marie Curie Actions
   url: "/assets/images/home/marie-curie-actions.jpg"
+- name: BBSRC
+  url: "/assets/images/home/BBSRC.png"
+- name: EPSRC
+  url: "/assets/images/home/EPSRC.png"
+- name: LIDO
+  url: "/assets/images/home/LIDO.png"
