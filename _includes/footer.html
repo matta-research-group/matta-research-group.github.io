@@ -6,7 +6,7 @@
             {% comment %}
             Site branding
             {% endcomment %}
-            <h4 class="color-white font-wide font-bold text-center margin-bottom-2"><div class="text-center"><img alt="{{ site.title }}" src="{% if site.site_logo contains '://' %}{{ site.site_logo }}{% else %}{{ site.url }}{{ site.site_logo }}{% endif %}"></div>{{ site.title }}</h4>
+            <h4 class="color-white font-wide font-bold">{{ site.title }}</h4>
             <div class="text-center">
                 <ul class="menu icon-size-lg">
                         
@@ -54,7 +54,7 @@
             Site branding
             {% endcomment %}
             <div class="cell small-12 medium-4">
-                <h4 class="color-white font-wide font-bold"><div class="text-center"><img alt="{{ site.title }}" src="{% if site.site_logo contains '://' %}{{ site.site_logo }}{% else %}{{ site.url }}{{ site.site_logo }}{% endif %}"></div>{{ site.title }}</h4>
+                <h4 class="color-white font-wide font-bold">{{ site.title }}</h4>
                 <ul class="menu icon-size-lg">
                     
                     {% if site.github_url != nil %}
