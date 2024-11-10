@@ -1,6 +1,6 @@
 ---
 title: Group Manual
-layout: page/resources
+layout: default
 ---
 
 This manual is heavily inspired by [Chris Jackson’s](https://blogs.imperial.ac.uk/assistant-provost-edi/2018/05/21/pirate-the-code-of-conduct/) document and the [Wallace Lab](https://ewallace.github.io/manual/newstart) guide.
