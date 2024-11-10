@@ -150,7 +150,7 @@ Funding
   <div class="grid-x grid-margin-x grid-margin-y small-up-2 medium-up-3">
     {% for funding_image in site.data.homepage.funding_section_images %}
     <div class="cell text-center">
-      <img alt="{{ funding_image.name }}" src="{% if funding_image.url contains '://' %}{{ funding_image.url }}{% else %}{{ site.url }}{{ funding_image.url }}{% endif %}" title="{{ funding_image.name }}">
+      <img alt="{{ funding_image.name }}" src="{% if funding_image.url contains '://' %}{{ funding_image.url }}{% else %}{{ site.url }}{{ funding_image.url }}{% endif %}" title="{{ funding_image.name }}" style="max-width: 60%; ">
     </div>
     {% endfor %}
   </div>
