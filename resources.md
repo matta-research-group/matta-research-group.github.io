@@ -11,6 +11,11 @@ Links and resources for group members (and whoever may find these useful):
 - [Group Manual](group-manual)
 - [Code of Conduct](COC)
 
+### HPC resources
+- [CREATE documentation](https://docs.er.kcl.ac.uk)
+- [CREATE forum](https://forum.er.kcl.ac.uk/latest)
+- [Young documentation](https://www.rc.ucl.ac.uk/docs/Clusters/Young/)
+
 #### Cheat Sheets
 
 - [GitHub Cheat Sheet](https://education.github.com/git-cheat-sheet-education.pdf)
@@ -33,9 +38,9 @@ Links and resources for group members (and whoever may find these useful):
 
 #### Cheminformatics
 
-- https://chemiscope.org/
-- https://github.com/joofio/py4chemoinformatics
-- http://practicalcheminformatics.blogspot.com
+- [Chemiscope](https://chemiscope.org/)
+- [github resources py4cheminformatics](https://github.com/joofio/py4chemoinformatics)
+- [Practical Cheminformatics Blog](http://practicalcheminformatics.blogspot.com)
 
 #### Data visualisation and presentation
 
