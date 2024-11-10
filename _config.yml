@@ -8,7 +8,7 @@ JEKYLL_ENV: "production"
 address_1: "Britannia House"
 address_2: "King's College London, Chemistry Department"
 address_3: "7 Trinity St, London SE1 1DB"
-site_logo: "/assets/images/logo1.png" # Site logo
+#site_logo: "/assets/images/logo1.png" # Site logo
 github_url: "https://github.com/matta-research-group/"
 facebook_url: 
 instagram_url: 
