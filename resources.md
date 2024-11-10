@@ -8,8 +8,8 @@ Links and resources for group members (and whoever may find these useful):
 
 #### Group Manual and Code of Conduct
 
-- [Group Manual](group-manual.md)
-- [Code of Conduct](COC.md)
+- [Group Manual](group-manual)
+- [Code of Conduct](COC)
 
 #### Cheat Sheets
 

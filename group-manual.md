@@ -1,20 +1,21 @@
 ---
 title: Group Manual
-layout: default
+layout: page/resources
+
 ---
 
 This manual is heavily inspired by [Chris Jackson’s](https://blogs.imperial.ac.uk/assistant-provost-edi/2018/05/21/pirate-the-code-of-conduct/) document and the [Wallace Lab](https://ewallace.github.io/manual/newstart) guide.
 
-## ORCID identifier and Google Scholar profile
+#### ORCID identifier and Google Scholar profile
 
 [ORCID](https://orcid.org/) provides a persistent digital identifier (an ORCID iD) that you own and control, and that distinguishes you from every other researcher.  A Google scholar profile is every academic’s business card: it shows authored publications, citations and coauthors, and will likely be the first result when people look up your name. You will be asked to provide an ORCID iD when i.e. submitting a paper to a journal, but you might want to link your Google scholar profile in your CV.
 **Set up an ORCID id and a Google Scholar profile, they will be useful!**
 
-## **Working hours**
+#### Working hours
 
 Many of you have personal responsibilities and obligations in addition to your PhD studies. At times, it can be difficult to balance those demands, and that a classic ‘9-to-5’ day may not be optimal for everyone. Because of this, the exact hours you choose to work is up to you. Being on campus between 10:00 and 16:00 most days may, however, help facilitate collaborative working and lead to a more fulfilling research experience. Where possible, meetings and events will not be arranged outside these hours to allow participation by all group members.
 
-## **Meetings**
+#### Meetings
 
 **Group meetings.** All group members are expected to attend if they are not otherwise engaged in other research-related activities (e.g. at conference, attending training or a lecture, etc). Group meetings are an excellent forum for updating colleagues on project progress, developing research skills, and widening our collective understanding. Meetings provide a forum for the presentation of results, such as ‘dry-runs’ of conference talks, and more informal discussions around research topics arising. As part of your professional training, you will be expected to lead a group discussion on a topic of your choice at least once per term.
 
@@ -30,9 +31,9 @@ Many of you have personal responsibilities and obligations in addition to your P
 
 Such reports are an important way to self-monitor your progress, as well as keeping your supervisor(s) informed of both positive and negative developments. They are particularly important for those who have supervisors based in other institutions.
 
-## **Communication expectations**
+#### Communication expectations
 
-I**nternal communication** 
+**Internal communication** 
 Most internal communication happens first either in-person or on Teams/Slack. If people who weren’t part of your in-person conversation would be helped by knowing about it, please post in the relevant Teams channel.
 
 **External communication** 
@@ -43,7 +44,7 @@ Where possible, we try to avoid sending work-related emails/Teams messages outsi
 
 These are asynchronous communication channels - ***you don’t need to respond immediately*** - it’s not useful to be constantly “on call” and it’s bad for your mental health. Set notification schedules on Teams so that you aren’t disturbed when you’re focused on a task or you’re off work or asleep, and ignore emails then too. However, *please respond to email & slack messages within one ordinary working day*, i.e. a weekday when you’re not on leave, nor at a conference or training session. If you don’t have a full response, it’s courteous to respond saying “I don’t know, can I get back to you tomorrow/next week/when I’ve done some reading”. If you’re not working, set an autoreply to do that for you. If you ask someone else a question and they don’t get back to you, ask again the next ordinary working day. ***If I don’t answer a time-sensitive query within the expected timeframe, do send a follow-up message! I will be grateful of the reminder.***
 
-## **Outputs, publication expectations and standards, and open science**
+#### Outputs, publication expectations and standards, and open science
 
 Where possible, all research outputs (e.g. papers) will be published ‘Open Access’ (OA) (preferably Gold or Diamond OA; for definitions, please see the [Open Research Glossary](https://figshare.com/articles/Open_Research_Glossary/1482094)), with manuscripts also uploaded to a relevant pre-print server (e.g. [](https://eartharxiv.org/)ChemRxiv) prior to journal submission, review, and (hopefully) publication. Where Gold or Diamond OA is not possible, the manuscript should be made publicly available via Green OA, and must be placed in the King’s system within three months of acceptance. 
 
@@ -57,11 +58,11 @@ Upon completion of a project and where data confidentiality allows, all data sho
 
 If you need more computational/storage resources then please discuss your individual requirements with Micaela.
 
-## **Journals**
+#### Journals
 
 You should be familiar with recently published material relevant to your project. A list of journals of interest can be found in the [Resources](https://www.notion.so/312c8454b88340859270d0edbdebaff1?pvs=21) page. Signing-up to ‘mail alerts’ from specific journals and more general publication ‘feeds’ (e.g. Google Scholar) are highly recommended; by doing this, you can be kept informed of newly published literature related to your studies.
 
-## **Conferences**
+#### Conferences
 
 **Expectations and requirements.**You are encouraged and expected to participate to scientific conferences and networking events throughout your PhD/contract. You are expected to be proactive in finding such opportunities (checking websites, RSS feeds, keeping a calendar), and keep track of abstract deadlines. Each year, I will ask you to present a ‘conference and training plan’ where you outline which events you plan to attend. You have a generous conference allowance, but your time is valuable: make sure you are  attending valuable events that offer you the best chance of showcasing your work, that enable you to learn complementary skills, or that might help you break into a new scientific community.
 
@@ -87,24 +88,20 @@ You should be familiar with recently published material relevant to your project
 
 **Submitting abstracts.** Conference abstracts must be shown to **all co-authors** (both inside and outside of King’s) **at least one week before the abstract deadline**. Upon acceptance (or rejection) of your abstract, you must inform **all** coauthors of the outcome as soon as possible. You must also send a final draft of your presentation or poster to **all co-authors at least one week before the date of presentation**. Ideally, a near-final draft should be completed two-weeks before the date of presentation, so that it can be presented at a group meeting ; in this way, you will be able to receive feedback from your colleagues. Presentation and publishing ethics, both of which are at least partly captured by the Committee on Publication Ethics ([COPE](https://publicationethics.org/)), state that all authors must approve submission and presentation of work bearing their names. The same applies to papers (see above).
 
-## **Social media**
-
-In your work-related life, you may wish to engage with social media (Linkedin, BlueSky, ..). Please be considerate of others when using these platforms, and respectful for how others may wish to use them. 
-
-## **Holidays**
+#### Holidays
 
 You are expected to take ~25 days/year, beyond bank holidays and closure at Christmas. I strongly encourage you to take time off so you can relax, visit family and friends, and recharge. Please, inform me and the group in advance when you plan to take holidays or if you will not be present at group weekly meetings. Use the shared calendar so the group know when you are away.
 
 It is important to take holidays, respect weekends (or time in lieu) and establish a sustainable work-life balance. It is also important to respect the time and efforts of others, and the contribution of funders, and to note that effective working will improve the quality of your research. Where there are key time pressures, it is important to prioritise work. If you struggle with establishing a sustainable work life balance, please discuss this with me at an early stage.
 
-## TA-ing
+#### TA-ing
 
 Being a teaching assistant is an important part of your professional training, especially if you are passionate about teaching/mentoring. For example, it allows you to pass on your academic knowledge to other students, as well as equipping you with pedagogic skills that may prove useful when giving presentations at conferences. It is also a good opportunity to round up your stipend/salary; given the high cost of living in London, I am generally supportive of TA-ing. 
 
 **I am more than happy to accommodate TA commitments, so long as you are progressing well in your research and do not become excessively reliant on this extra income.** I do request that you discuss with me the extent of TA commitments that is appropriate for your career stage, and let me know of your TA schedule as soon as it is established.
 
 
-## Data curation days
+#### Data curation days
 
 **Why we need Data Curation Days**
 

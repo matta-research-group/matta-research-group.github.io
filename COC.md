@@ -1,6 +1,6 @@
 ---
 title: Code Of Conduct 
-layout: default
+layout: page/resources
 ---
 
 This code of conduct is heavily inspired by [Chris Jackson’s](https://blogs.imperial.ac.uk/assistant-provost-edi/2018/05/21/pirate-the-code-of-conduct/) document.
