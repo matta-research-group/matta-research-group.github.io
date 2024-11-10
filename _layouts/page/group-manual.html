@@ -1,0 +1,15 @@
+---
+layout: default
+---
+
+<div class="grid-container">
+    <h1 class="separator-center font-bold margin-top-3">{{ page.title }}</h1>
+</div>
+
+{% if page.hero_image %}
+  <div class="grid-container text-center">
+    <img src="{% if page.hero_image contains '://' %}{{ page.hero_image }}{% else %}{{ site.url }}{{ page.hero_image }}{% endif %}" alt="{{ page.title }}" class="img-responsive" style="max-height: 500px; width: auto;">
+  </div>
+{% endif %}
+
+<div class="grid-container margin-top-1">{{ content }}</div>
