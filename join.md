@@ -7,6 +7,11 @@ hero_image:
 
 <h4 class="margin-top-2 margin-bottom-1 font-bold">Scholarships opportunities for prospective PhD students at King's</h4> 
 
+A 4-year, [fully funded PhD studentship](https://www.kcl.ac.uk/study-legacy/funding/phd-studentship-data-driven-design-of-organic-mixed-conductors) on "Data-driven design of organic mixed conductors” is available to both UK and international applicants for a start date of October 2025. 
+The studentship is aligned to a 3-year EPSRC project which aims to develop a computational screening pipeline to discover novel organic mixed ionic/electronic conductors. The candidate will leverage cheminformatics, quantum chemistry, and molecular dynamics simulations, working in close collaboration with experimental groups. 
+
+For further information, [reach out to Dr Micaela Matta](mailto:micaela.matta@kcl.ac.uk).
+
 - [King’s-China Scholarship Council PhD Scholarship programme](https://www.kcl.ac.uk/study-legacy/funding/kings-china-scholarship-council-phd-scholarship-programme-k-csc) (Chinese citizens only)
 - [Wellcome Trust PhD studentships](https://wellcome.org/grant-funding/schemes/four-year-phd-programmes-studentships-basic-scientists)
 - [Fulbright Scolarships](https://www.kcl.ac.uk/study-legacy/funding/fulbright-postgraduate-scholarship) (US citizens only)
@@ -20,15 +25,14 @@ hero_image:
 
 <h4 class="margin-top-2 margin-bottom-1 font-bold">Postdoc opportunities</h4>
 
-### Postdoc opening 
 
-We have an opening for a 3-year EPSRC-funded postdoc to work on high-throughput screening and optimisation of mixed ionic/electronic conductors. 
+We have an opening for a [3-year EPSRC-funded postdoc](https://www.kcl.ac.uk/jobs/097005-postdoctoral-research-associate) to work on high-throughput screening and optimisation of mixed ionic/electronic conductors. 
 
 The position is funded by the EPSRC project “Data-driven design of organic mixed conductors”.  
 In this project, the candidate will conduct a high throughput computational screening of novel organic mixed ionic/electronic conductors leveraging cheminformatics, quantum chemistry, and molecular dynamics simulations. The candidate will work in close collaboration with experimental groups providing validation/testing of novel mixed conducting materials.
 The project has a strong emphasis on software development; the candidate will develop and maintain workflows and datasets related to the project according to FAIR principles. 
 
-For further information, please [reach out to Dr Micaela Matta](mailto:micaela.matta@kcl.ac.uk).
+For further information, [reach out to Dr Micaela Matta](mailto:micaela.matta@kcl.ac.uk).
 
 
 ### Fellowships
