@@ -1,3 +1,9 @@
+- name: BBSRC
+  url: "/assets/images/home/BBSRC.png"
+- name: LIDO
+  url: "/assets/images/home/LIDO.png"
+- name: EPSRC
+  url: "/assets/images/home/EPSRC.png"
 - name: King's College London
   url: "/assets/images/home/KCL.png"
 - name: CCP5
@@ -8,9 +14,4 @@
   url: "/assets/images/home/RoyalSociety.jpg"
 - name: Marie Curie Actions
   url: "/assets/images/home/msca.png"
-- name: BBSRC
-  url: "/assets/images/home/BBSRC.png"
-- name: LIDO
-  url: "/assets/images/home/LIDO.png"
-- name: EPSRC
-  url: "/assets/images/home/EPSRC.png"
+
