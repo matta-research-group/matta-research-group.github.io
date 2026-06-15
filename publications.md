@@ -4,7 +4,7 @@ permalink: /publications/
 # type: article
 title: Publications
 description: Publications by yearly categories in reversed chronological order.
-years: [2026, 2025, 2024, 2023, 2022, 2020, 2019, 2018, 2017, 2016, 2015, 2013]
+years: [2026, 2025, 2024, 2023, 2022]
 publication_photo: http://via.placeholder.com/200
 ---
 
@@ -16,7 +16,7 @@ publication_photo: http://via.placeholder.com/200
   {% for y in page.years %}
     <div class="margin-bottom-3">
       <h3 class="separator-left margin-bottom-2">{{y}}</h3>
-      {% bibliography -f biblio -q @*[year={{y}}]* %}
+      {% bibliography -f biblio -q @*[year={{y}}] %}
     </div>
   {% endfor %}
 </div>
