@@ -5,15 +5,16 @@ description: >- # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://mattaresearch.com" # the base hostname & protocol for your site, e.g. http://example.com
 JEKYLL_ENV: "production"
-address_1: "Britannia House"
-address_2: "King's College London, Chemistry Department"
-address_3: "7 Trinity St, London SE1 1DB"
+address_1: "Department of Chemistry"
+address_2: "Kings College London"
+address_3: "Strand, London WC2R 2LS"
 #site_logo: "/assets/images/logo1.png" # Site logo
 github_url: "https://github.com/matta-research-group/"
 facebook_url: 
 instagram_url: 
 youtube_url: 
-twitter_url: "https://twitter.com/micaelamatta"
+linkedin_url: https://www.linkedin.com/in/micaela-matta-a691784a/?locale=en
+bluesky_url: https://bsky.app/profile/micaelamatta.bsky.social
 
 # For jekyll-scholar plugin for Bibtex
 
@@ -37,7 +38,7 @@ scholar:
   sort_by: year
   order: descending
 
-  source: /_bibliography/
+  source: ./_bibliography
   bibliography: biblio.bib
   bibliography_template: biblio
 
